@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+    margin: 0;
+}
+
+#bgimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    height: 100vh;
+    z-index: -1;
+    filter: grayscale(0) blur(5px);
+}
+
+h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 10rem;
+    margin: 0px;
+    margin-bottom: 1%;
+}
+
+h5{
+    color: white;
+    font-size: 5rem;
+    margin: 0px;    
+}
+
+#blue{
+    color: #05F;
+}
+
+#red{
+    color: red;
+}
+
+nav{
+    position: absolute;
+    width: 98vw;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    background: black;
+    border-radius: 10px;
+}
+
+nav a:hover{
+    color:#0AF;
+}
+
+#container_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+/* ANIMATION STARTS HERE */
+
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background: white;
+    position: absolute;
+}
