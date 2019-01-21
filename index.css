@@ -76,6 +76,7 @@ nav a:hover{
     width: 10px;
     height: 10px;
     border-radius: 100px;
+    border: 2px solid white;
     background: white;
     position: absolute;
 }
