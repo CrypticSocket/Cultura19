@@ -14,7 +14,7 @@ function animateCircles(event){
     var colbd = colors[Math.floor(Math.random() * colors.length)];
     circle.style.borderColor = colbd;
     circle.style.background = colbg;
-    circle.style.transition = "all 0.5s linear 0s";
+    circle.style.transition = "all 0.3s linear 0s";
 
     circle.style.right = circle.offsetLeft - 20 + 'px';
 
