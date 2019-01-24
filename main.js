@@ -18,8 +18,8 @@ function animateCircles(event){
 
     circle.style.right = circle.offsetLeft - 20 + 'px';
 
-    circle.style.width = "20px";
-    circle.style.height= "20px";
+    circle.style.width = "40px";
+    circle.style.height= "40px";
 
     circle.style.opacity=0;
 }
