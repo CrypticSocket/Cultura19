@@ -29,7 +29,7 @@ function animateCircles(event){
 //timer part
 
 //set the date HERE
-var countDownDate = new Date("Jan 31, 2019 02:35:00").getTime();
+var countDownDate = new Date("Mar 15, 2019 00:00:00").getTime();
 
 //update teh countDown every 1 section
 var countdownfunction = setInterval(
