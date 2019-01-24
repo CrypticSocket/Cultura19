@@ -56,3 +56,7 @@ var countdownfunction = setInterval(
   } , 1000);
 
 //wait dont change anything right now. il get confused.  XD
+
+//-------------------
+// introducing le sparklez !
+// sparkles a temporary failure.
