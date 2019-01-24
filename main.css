@@ -7,7 +7,7 @@ body{
     width:100vw;
 
     /* BG pic stuff */
-    background-image: url("img/intro.jpg");
+    background-image: url("img/intro-bw.jpg");
     background-color: #cccccc;
     height: 500px;
     background-position: center;
@@ -41,7 +41,7 @@ body{
 }
 
 #container_main h5{
-    color: #666;
+    color: #aaa;
     font-size: 5rem;
     margin: 0px;
 
@@ -127,7 +127,7 @@ nav{
 #demo{
 
   font-size: 3em;
-  color: #333;
+  color: #888;
   font-family: 'PT Mono', monospace;
 
 }
