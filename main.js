@@ -1,6 +1,6 @@
 document.onmousemove = animateCircles;
 
-var colors = ['#50f', '#90f' , ' a2a' , '#28d' , '#f55', '#0af'];
+var colors = ['#50f', '#90f' , ' a2a' , '#28d' , '#f55', '#0af', "#80f"];
 
 function animateCircles(event){
     var circle = document.createElement("div");
