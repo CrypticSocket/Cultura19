@@ -1,6 +1,7 @@
 body{
     background-color: black;
     margin: 0;
+    font-family: 'Satisfy', cursive;
 }
 
 #bgimg{
@@ -24,18 +25,16 @@ h1{
 h5{
     color: white;
     font-size: 5rem;
-    margin: 0px;    
+    margin: 0px;
+
 }
 
-#blue{
-    color: #05F;
-}
-
-#red{
-    color: red;
-}
 
 nav{
+  padding:0;
+}
+
+/* nav{
     position: absolute;
     width: 98vw;
     top: 0;
@@ -58,7 +57,7 @@ nav a{
 
 nav a:hover{
     color:#0AF;
-}
+} */
 
 #container_main{
     display: flex;
@@ -68,13 +67,17 @@ nav a:hover{
     height: 100vh;
 }
 
+#demo{
 
+  font-size: 2.5em;
+
+}
 
 /* ANIMATION STARTS HERE */
 
 .circle{
-    width: 2px;
-    height: 2px;
+    width: 5px;
+    height: 5px;
     border-radius: 100px;
     border: 2px solid white;
     background: white;
