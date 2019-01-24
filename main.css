@@ -8,8 +8,8 @@ body{
 
     /* BG pic stuff */
     background-image: url("img/intro-bw.jpg");
-    background-color: #cccccc;
-    height: 500px;
+    background-color: #222;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
