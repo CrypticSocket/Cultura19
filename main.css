@@ -5,6 +5,15 @@ body{
     margin: 0;
     font-family: 'Satisfy', cursive;
     width:100vw;
+
+    /* BG pic stuff */
+    background-image: url("./img/intro.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 #bgimg{
@@ -17,15 +26,21 @@ body{
     filter: grayscale(0) blur(5px);
 }
 
-h1{
+#container_main h1{
     color:#fff;
     text-transform: uppercase;
     font-size: 10rem;
     margin: 0px;
     margin-bottom: 1%;
+    transition: all 2s linear;
 }
 
-h5{
+#container_main:hover h1{
+    color:#f05;
+
+}
+
+#container_main h5{
     color: #666;
     font-size: 5rem;
     margin: 0px;
@@ -61,13 +76,33 @@ nav a:hover{
     color:#0AF;
 } */
 
+
+/* background pics do it*/
+/*??? done already. xD*/
+
+
+/* #intropic{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+#intropic_m{
+    display: none;
+} */
+
+
+
+
 nav{
   padding:0;
   font-family: 'PT Mono', monospace;
   color:#aaa !important;
   border:none !important;
   /* background-color: #222 !important; */
-
 }
 
 #container_main{
@@ -103,6 +138,7 @@ nav{
   color: #DDD;
   padding: 0px;
   border-bottom: 1px solid #080808;
+  font-family: 'PT Mono', monospace;
 }
 
 #navbar ul li a:hover{
