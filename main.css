@@ -73,8 +73,8 @@ nav a:hover{
 /* ANIMATION STARTS HERE */
 
 .circle{
-    width: 10px;
-    height: 10px;
+    width: 2px;
+    height: 2px;
     border-radius: 100px;
     border: 2px solid white;
     background: white;

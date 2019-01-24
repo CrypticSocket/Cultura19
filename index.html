@@ -14,10 +14,34 @@
 
   <body>
 
+        <!-- add the fx attribute to the nav if you want it fixed to the top -->
     <nav>
-      <a href="#">Schedule</a>
-      <a href="#">Contact</a>
-      <a href="#">More Stuff</a>
+    	<!-- this label allows the checkbox to be activated by clicking anywhere in the nav -->
+    	<label>
+    		<!-- checkbox required for responsiven menu -->
+    		<input type="checkbox">
+
+    		<!-- bareCSS will use the header to contain the hamburger menu -->
+    		<header>
+    			<!-- you can leave this empty if you don't want a title -->
+    			<a><img src="img/bareCSS.svg"> Title</a>
+    		</header>
+
+    		<!-- the main navigation items are anchor links within an unordered list -->
+    		<ul>
+    			<li><a href="index.html">Home</a></li>
+    			<li><a href="about.html">About</a></li>
+    			<li>
+    				<a>Dropdown</a>
+
+    				<!-- use <menu> and <menuitem> within an <li> for dropdowns -->
+    				<menu>
+    					<menuitem><a href="#">Item one</a></menuitem>
+    					<menuitem><a href="#">Item two</a></menuitem>
+    				</menu>
+    			</li>
+    		</ul>
+    	</label>
     </nav>
 
      <section id="container_main">
@@ -25,22 +49,14 @@
          <!-- and then we'll have to edit to make it look decent. smh -->
 
          <h1> Cultura 19 ! </h1>
-         <h5>Coming Soon</h5>
-
+         <div class="middle">
+           <h5>Coming Soon</h5>
+           <hr>
+           <!--timer section-->
+           <p id="demo" style="font-size:30px"></p>
+         </div>
 
      </section>
     <script rel="stylesheet" type="text/javascript" src="./main.js"></script>
   </body>
 </html>
-
-
-ok so u can only share one tree at a time?
-not really....
-
-u there?
-yeah
-
-cool. you should see only 1 tab. right ?
-ya
-
-now ?
