@@ -1,6 +1,6 @@
 document.onmousemove = animateCircles;
 
-var colors = ['#50f', '#90f' , ' a2a' , '#28d' , '#f55', '#0af', "#80f"];
+var colors = ['#50f' , '#90f', '#28d' , '#f55', '#0af', "#80f"];
 
 function animateCircles(event){
     var circle = document.createElement("div");
@@ -18,8 +18,8 @@ function animateCircles(event){
 
     circle.style.right = circle.offsetLeft - 20 + 'px';
 
-    circle.style.width = "20px";
-    circle.style.height= "20px";
+    circle.style.width = "40px";
+    circle.style.height= "40px";
 
     circle.style.opacity=0;
 }
