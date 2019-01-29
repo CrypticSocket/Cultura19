@@ -14,12 +14,12 @@ function animateCircles(event){
     var colbd = colors[Math.floor(Math.random() * colors.length)];
     circle.style.borderColor = colbd;
     circle.style.background = colbg;
-    circle.style.transition = "all 0.3s linear 0s";
+    circle.style.transition = "all 0.3s linear 0.2s";
 
     circle.style.right = circle.offsetLeft - 20 + 'px';
 
-    circle.style.width = "40px";
-    circle.style.height= "40px";
+    circle.style.width = "30px";
+    circle.style.height= "30px";
 
     circle.style.opacity=0;
 }
@@ -43,7 +43,7 @@ var countdownfunction = setInterval(
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     //output element's id = demo
-    document.getElementById("demo").innerHTML = days + "d    " + hours +  "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("demo").innerHTML = days + "d " + hours +  "h " + minutes + ", " + seconds + "s ";
 
     //if countdown is over will write something HERE [ ONCE THE TIMER IS DONE WE'LL HAVE TO REPLACE THIS BIT. ]
 
