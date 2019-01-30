@@ -131,15 +131,30 @@ nav{
   border-radius: 5px;
 }
 
+@font-face {
+    font-family: "myFirstFont";
+    src: url("./fonts/digital-7\ \(italic\).ttf");
+}
+
 #demo{
 
   /* font-size: 5em; */
   color: #999;
-  font-family: 'PT Mono', monospace;
+  font-family: "myFirstFont";
   background-color: rgba(0,0,0,0.5);
   padding: 0rem 4rem 0rem 4rem;
+  margin-bottom: 0;
   border-radius: 5px;
 }
+
+#demo2{
+
+    /* font-size: 5em; */
+    color: #666;
+    font-family: "myFirstFont";
+    margin-top: 0;
+    padding: 0;
+  }
 
 /* NAVBAR FIX */
 #navbar{
@@ -161,7 +176,9 @@ nav{
 
 ::-webkit-scrollbar{
     width: 0px;
-  }
+}
+
+html {overflow: hidden;}
 
 @media (max-width: 50rem)
 {
