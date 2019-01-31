@@ -7,7 +7,7 @@ body{
     width:100vw;
 
     /* BG pic stuff */
-    background-image: url("img/intro-nbw.jpg");
+    background-image: url("../img/intro-nbw.jpg");
     background-color: #222;
     height: 100vh;
     background-position: center;
@@ -133,7 +133,7 @@ nav{
 
 @font-face {
     font-family: "myFirstFont";
-    src: url("./fonts/digital-7\ \(italic\).ttf");
+    src: url("../fonts/digital-7\ \(italic\).ttf");
 }
 
 #demo{
