@@ -16,6 +16,12 @@ body{
     position: relative;
 }
 
+header a:hover{
+  color: #4AA;
+  border-color: #4AA;
+  border-bottom: 2px solid;
+}
+
 #bgimg{
     position: absolute;
     top: 0;
