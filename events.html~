@@ -262,7 +262,7 @@
                 border-bottom: 2px solid #f05;
                 transition:1s linear;
                 font-size:1em;
-                height:2em;
+                height:3
             }
             
             .boxbut:hover{
