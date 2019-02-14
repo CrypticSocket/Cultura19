@@ -303,11 +303,29 @@
                }
             }
             
+            /*
+            function hidetopicevents(a)
+            {
+             
+                 document.getElementsById("gamesdiv").style.display ="none";
+                 document.getElementsById("litdiv").style.display ="none";                
+                 document.getElementsById("techdiv").style.display ="none";
+                 document.getElementsById("kannadadiv").style.display ="none";
+                 document.getElementsById("musicdiv").style.display ="none";
+                 document.getElementsById("dancediv").style.display ="none";
+                 document.getElementsById("informaldiv").style.display ="none";
+                 document.getElementsById("dramadiv").style.display ="none";
+                 document.getElementsById("photodiv").style.display ="none";
+                
+            }
+            //*/
+            
             function topicclick(topic)
             {
                 flag=1;
+                //hidetopicevents(5);
 
-                document.getElementsById(*"div").style.display ="none";
+                //document.getElementsById(*"div").style.display ="none";
                 /*
                 document.getElementsById("gamesdiv").style.display ="none";
                 document.getElementsById("litdiv").style.display ="none";                
@@ -316,11 +334,11 @@
                 document.getElementsById("techdiv").style.display ="none";
                 document.getElementsById("techdiv").style.display ="none";
                 document.getElementsById("techdiv").style.display ="none";
-                */
+                //*/
                 
                 document.getElementById("mainpage").setAttribute("class",topic+"bg");
                 document.getElementById(topic).style.backgroundColor = "#888";
-                document.getElementById(topic+"div").style.display ="block";
+                document.getElementById(topic+"div").style.display ="unset";
             }
             
             function opclick(x)
