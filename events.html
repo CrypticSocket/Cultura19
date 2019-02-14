@@ -25,7 +25,7 @@
             <div id="mainpage">
             </div>
             <section txt="c">
-                    <div id="gamesdiv">
+                    <div id="gamesdiv" class="topicdiv">
                         <grid>
                             <div col = "1/4">
                                 <button class="but2" id="pubg" value="pubg" onclick="opclick(this.id)">PUBG Mobile</button>
@@ -53,7 +53,7 @@
                         </grid>
                     </div>
                 
-                <div id="artdiv">
+                <div id="artdiv" class="topicdiv">
                     <grid>
                         <div col = "1/4">
                             <button class="but2" id="arthunt" value="arthunt" onclick="opclick(this.id)">ART HUNT</button>
@@ -74,7 +74,7 @@
                     </grid>
                 </div>
                 
-                <div id="dramadiv">
+                <div id="dramadiv" class="topicdiv">
                     <grid>
                         <div col = "1/4">
                             <button class="but2" id="mime" value="mime" onclick="opclick(this.id)">MIME </button>
@@ -94,7 +94,7 @@
                     </grid>
                 </div>
                 
-                <div id="photodiv">
+                <div id="photodiv" class="topicdiv">
                     <grid>
                         <div col = "1/4">
                             <button class="but2" id="eyeshot" value="eyeshot" onclick="opclick(this.id)">EYESHOT</button>
@@ -102,7 +102,7 @@
                     </grid>
                 </div>
                 
-                <div id="kannadadiv">
+                <div id="kannadadiv" class="topicdiv">
                     <grid>
                         <div col = "1/4">
                             <button class="but2" id="rasaprashne" value="rasaprashne" onclick="opclick(this.id)">RASAPRASHNE </button>
@@ -122,7 +122,7 @@
                     </grid>
                 </div>
                             
-                <div id="musicdiv">
+                <div id="musicdiv" class="topicdiv">
                     <grid>
                         <div col = "1/4">
                           <button class="but2" id="surtaal" value="surtaal" onclick="opclick(this.id)">SUR-TAAL (SOLO/DUET) </button>
@@ -145,7 +145,7 @@
                     </grid>
                 </div>
                 
-                <div id="dancediv">
+                <div id="dancediv" class="topicdiv">
                     <grid>
                         <div col = "1/4">
                             <button class="but2" id="kickncrew" value="kickncrew" onclick="opclick(this.id)">KICK N CREW </button>
@@ -168,9 +168,8 @@
                     </grid>
                 </div>
 
-                <div id="litdiv">
+                <div id="litdiv" class="topicdiv" >
                     <grid>
-                        </div>
                         <div col = "1/4">
                             <button class="but2" id="jamwithatwist" value="jamwithatwist" onclick="opclick(this.id)">JAM WITH A TWIST </button>
                         </div>
@@ -192,7 +191,7 @@
                     </grid>
                 </div>
 
-                <div id="techdiv">
+                <div id="techdiv" class="topicdiv">
                     <grid>
                         <div col = "1/4">
                             <button class="but2" id="codeswap" value="codeswap" onclick="opclick(this.id)">CODE SWAP </button>
@@ -236,7 +235,7 @@
                     </grid>
                 </div>
                 
-                <div id="informaldiv">
+                <div id="informaldiv" class="topicdiv">
                     <grid>
                         <div col = "1/4">
                             <button class="but2" id="mr&mrscultura" value="mr&mrscultura" onclick="opclick(this.id)">Mr. and Ms. CULTURA </button>
@@ -308,6 +307,17 @@
             {
                 flag=1;
 
+                //document.getElementsById(*"div").style.display ="none";
+                //*
+                document.getElementsById("gamesdiv").style.display ="none";
+                document.getElementsById("litdiv").style.display ="none";                
+                document.getElementsById("techdiv").style.display ="none";
+                document.getElementsById("photodiv").style.display ="none";
+                document.getElementsById("techdiv").style.display ="none";
+                document.getElementsById("techdiv").style.display ="none";
+                document.getElementsById("techdiv").style.display ="none";
+                //*/
+                
                 document.getElementById("mainpage").setAttribute("class",topic+"bg");
                 document.getElementById(topic).style.backgroundColor = "#888";
                 document.getElementById(topic+"div").style.display ="block";
@@ -581,7 +591,7 @@
                 background-color: blue;
             }
 
-            #gamesdiv{
+            .topicdiv{
                 display: none;
             }
             
