@@ -14,6 +14,7 @@
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="art">Art</button>
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="drama">Theatre</button>
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="photo">Photography</button>
+                    <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="kannada">Kannada</button>
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="music">Music</button>
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="dance">Dance</button>
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="lit">Literary</button>
@@ -54,7 +55,6 @@
                 
                 <div id="artdiv">
                     <grid>
-                        
                         <div col = "1/4">
                             <button class="but2" id="arthunt" value="arthunt" onclick="opclick(this.id)">ART HUNT</button>
                         </div>
@@ -144,8 +144,116 @@
                         </div>
                     </grid>
                 </div>
-
                 
+                <div id="dancediv">
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="kickncrew" value="kickncrew" onclick="opclick(this.id)">KICK N CREW </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="desibeats" value="desibeats" onclick="opclick(this.id)">DESI BEATS </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="kinkini" value="kinkini" onclick="opclick(this.id)">KINKINI </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="twototango" value="twototango" onclick="opclick(this.id)">TWO TO TANGO </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="1v1" value="1v1" onclick="opclick(this.id)">1 VS 1 (WESTERN) </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="switchfoot" value="switchfoot" onclick="opclick(this.id)">SWITCH FOOT</button>
+                        </div>
+                    </grid>
+                </div>
+
+                <div id="litdiv">
+                    <grid>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="jamwithatwist" value="jamwithatwist" onclick="opclick(this.id)">JAM WITH A TWIST </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="oldbooks" value="oldbooks" onclick="opclick(this.id)">OLD BOOKS </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="travel" value="travel" onclick="opclick(this.id)">TRAVEL </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="dontjudgeabookbyitscover" value="dontjudgeabookbyitscover" onclick="opclick(this.id)">DON'T JUDGE A BOOK BY ITS COVER </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="debate" value="debate" onclick="opclick(this.id)">DEBATE </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="fandomtwit" value="fandomtwit" onclick="opclick(this.id)">Fandom Twit</button>
+                        </div>
+                    </grid>
+                </div>
+
+                <div id="techdiv">
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="codeswap" value="codeswap" onclick="opclick(this.id)">CODE SWAP </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="techhunt" value="techhunt" onclick="opclick(this.id)">TECH HUNT </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="codejam" value="codejam" onclick="opclick(this.id)">CODE JAM </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="electricalrelay" value="electricalrelay" onclick="opclick(this.id)">ELECTRICAL RELAY </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="robowars" value="robowars" onclick="opclick(this.id)">ROBOWARS </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="cryptography" value="cryptography" onclick="opclick(this.id)">CRYPTOGRAPHY </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="circuitbreaker" value="circuitbreaker" onclick="opclick(this.id)">CIRCUIT BREAKER </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="surveyhunt" value="surveyhunt" onclick="opclick(this.id)">SURVEY HUNT </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="webdesigning" value="webdesigning" onclick="opclick(this.id)">WEB DESIGNING </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="blindcircuit" value="blindcircuit" onclick="opclick(this.id)">BLIND CIRCUIT </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="emarathona" value="emarathon" onclick="opclick(this.id)">E MARATHON </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="blitzchess" value="blitzchess" onclick="opclick(this.id)">BLITZ CHESS </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="hardwarehackathon" value="hardwarehackathon" onclick="opclick(this.id)">HARDWARE HACKATHON</button>
+                        </div>
+                    </grid>
+                </div>
+                
+                <div id="informaldiv">
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="eyeshot" value="mr&mrscultur" onclick="opclick(this.id)">Mr. and Ms. CULTURA </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="dota" value="dota" onclick="opclick(this.id)">HOGOTHON </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="dota" value="dota" onclick="opclick(this.id)">TREASURE HUNT </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="dota" value="dota" onclick="opclick(this.id)">FASHION SHOW </button>
+                        </div>
+                    </grid>
+                </div>
+                
+
             </section>
             
             
@@ -174,7 +282,7 @@
             var temp=0;
             var stopic=0;
             
-            //Drop Top Rain Drop -- Dropdown
+            //Drop Top Rain Drop -- Dropdown [ i guess nobody got the bad and boujee reference. :| ]
                 document.getElementById("eventdetailsh").onclick = function() { dropdown("eventdetails"); };
                 document.getElementById("eventrulesh").onclick = function() { dropdown("eventrules"); };
                 document.getElementById("eventadditionalh").onclick = function() { dropdown("eventadditional"); };
