@@ -14,7 +14,6 @@
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="art">Art</button>
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="drama">Theatre</button>
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="photo">Photography</button>
-                    <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="kannada">Kannada</button>
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="music">Music</button>
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="dance">Dance</button>
                     <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="lit">Literary</button>
@@ -145,59 +144,8 @@
                         </div>
                     </grid>
                 </div>
+
                 
-                <div id="musicdiv">
-                    <grid>
-                        
-                    </grid>
-                </div>
-
-                <div id="musicdiv">
-                    <grid>
-                        <div col = "1/4">
-                            <button class="but2" id="surtaal" value="surtaal" onclick="opclick(this.id)">SUR-TAAL (SOLO/DUET) </button>
-                        </div>
-                        <div col = "1/4">
-                            <button class="but2" id="philharmonics" value="philharmonics" onclick="opclick(this.id)">PHILHARMONICS (SOLO) </button>
-                        </div>
-                        <div col = "1/4">
-                            <button class="but2" id="instrumentalsolo" value="instrumentalsolo" onclick="opclick(this.id)">INSTRUMENTAL SOLO </button>
-                        </div>
-                        <div col = "1/4">
-                            <button class="but2" id="fifthelement" value="fifthelement" onclick="opclick(this.id)">THE FIFTH ELEMENT </button>
-                        </div>
-                        <div col = "1/4">
-                            <button class="but2" id="groupsinging" value="groupsinging" onclick="opclick(this.id)">GROUP SINGING (INDIAN) </button>
-                        </div>
-                        <div col = "1/4">
-                            <button class="but2" id="battleofthebands" value="battleofthebands" onclick="opclick(this.id)">BATTLE OF THE BANDS</button>
-                        </div>
-                    </grid>
-                </div>
-
-                <div id="musicdiv">
-                    <grid>
-                        <div col = "1/4">
-                            <button class="but2" id="surtaal" value="surtaal" onclick="opclick(this.id)">SUR-TAAL (SOLO/DUET) </button>
-                        </div>
-                        <div col = "1/4">
-                            <button class="but2" id="philharmonics" value="philharmonics" onclick="opclick(this.id)">PHILHARMONICS (SOLO) </button>
-                        </div>
-                        <div col = "1/4">
-                            <button class="but2" id="instrumentalsolo" value="instrumentalsolo" onclick="opclick(this.id)">INSTRUMENTAL SOLO </button>
-                        </div>
-                        <div col = "1/4">
-                            <button class="but2" id="fifthelement" value="fifthelement" onclick="opclick(this.id)">THE FIFTH ELEMENT </button>
-                        </div>
-                        <div col = "1/4">
-                            <button class="but2" id="groupsinging" value="groupsinging" onclick="opclick(this.id)">GROUP SINGING (INDIAN) </button>
-                        </div>
-                        <div col = "1/4">
-                            <button class="but2" id="battleofthebands" value="battleofthebands" onclick="opclick(this.id)">BATTLE OF THE BANDS</button>
-                        </div>
-                    </grid>
-                </div>
-
             </section>
             
             
@@ -226,7 +174,7 @@
             var temp=0;
             var stopic=0;
             
-            //Drop Top Rain Drop -- Dropdown [ i guess nobody got the bad and boujee reference. :| ]
+            //Drop Top Rain Drop -- Dropdown
                 document.getElementById("eventdetailsh").onclick = function() { dropdown("eventdetails"); };
                 document.getElementById("eventrulesh").onclick = function() { dropdown("eventrules"); };
                 document.getElementById("eventadditionalh").onclick = function() { dropdown("eventadditional"); };
