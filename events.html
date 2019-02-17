@@ -277,12 +277,13 @@
             var stopic=0;
             var prev=0;
             
+            /*
             //Drop Top Rain Drop -- Dropdown [ i guess nobody got the bad and boujee reference. :| ]
                 document.getElementById("eventdetailsh").onclick = function() { dropdown("eventdetails"); };
                 document.getElementById("eventrulesh").onclick = function() { dropdown("eventrules"); };
                 document.getElementById("eventadditionalh").onclick = function() { dropdown("eventadditional"); };
                 document.getElementById("eventcontacth").onclick = function() { dropdown("eventcontact"); };
-            
+            //*/
             
             function topicin(topic)
             {
@@ -598,16 +599,14 @@
 						stopic = 16;
 						break;
 
-					
-
-
                     default: 
                         stopic = 0;
                         break;              
                 }
 
             }
-            
+
+            /*
             function drophide()
             {
                 
@@ -625,6 +624,7 @@
                 document.getElementById(x).style.display="block";
             
             }
+            //*/
             
             
         </script>
@@ -701,13 +701,14 @@
 
             #eventdetails, #eventrules, #eventadditional, #eventcontact {
                 
-                display:none;
+                padding-left:2em;
+                font-size:1.12em;
             
             }
         
             .headingevent{
                 
-                font-size:1.2em;
+                font-size:1.25em;
             
             }
             
@@ -718,11 +719,13 @@
             .boxbut{
                 background-color: #222;
                 color: white;
-                border-radius: 0;
+                border-color: #fff0;
                 border-bottom: 2px solid #f05;
+                font-size:1.3em !important;
                 transition:1s linear;
                 font-size:1em;
-                height:2em;
+                padding:1em;
+                
             }
             
             .boxbut:hover{

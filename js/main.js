@@ -31,7 +31,7 @@ function animateCircles(event){
 //set the date HERE
 var countDownDate = new Date("Mar 22, 2019 00:00:00").getTime();
 
-//update teh countDown every 1 section
+//update the countDown every 1 section
 var countdownfunction = setInterval(
   function()
   {
@@ -43,7 +43,7 @@ var countdownfunction = setInterval(
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     //output element's id = demo
-    document.getElementById("demo").innerHTML = days + "d " + hours +  "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("demo").innerHTML = days + "<span class='timer-labels'>d </span>" + hours +  "<span class='timer-labels'>h </span>" + minutes + "<span class='timer-labels'>m </span>" + seconds + "<span class='timer-labels'>s </span>";
 
     //if countdown is over will write something HERE [ ONCE THE TIMER IS DONE WE'LL HAVE TO REPLACE THIS BIT. ]
 
