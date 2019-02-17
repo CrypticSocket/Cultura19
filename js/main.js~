@@ -43,7 +43,7 @@ var countdownfunction = setInterval(
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     //output element's id = demo
-    document.getElementById("demo").innerHTML = days + "<span class='timer-labels'>d </span>" + hours +  "<span class='timer-labels'>h </span>" + minutes + "<span class='timer-labels'>m </span>" + seconds + "<span class='timer-labels'>s </span>";
+    document.getElementById("demo").innerHTML = days + "<span class='timer-labels'>d</span>" + hours +  "<span class='timer-labels'>h </span>" + minutes + "<span class='timer-labels'>m </span>" + seconds + "<span class='timer-labels'>s </span>";
 
     //if countdown is over will write something HERE [ ONCE THE TIMER IS DONE WE'LL HAVE TO REPLACE THIS BIT. ]
 
