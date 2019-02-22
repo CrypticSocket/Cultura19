@@ -1,87 +1,279 @@
-<html>
-	<head>
-		    <link rel="stylesheet" type="text/css" media="screen" href="./css/bare.min.css" />
-	</head>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="./css/bare.min.css">
+        <title>Events</title>
+    </head>
+    <body>
+        
+        <div id="maincontainer">
+        <grid>
+            <div fx="" col="1/5" id="inlinelist">
+                <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="games">Gaming</button>
+                <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="art">Art</button>
+                <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="drama">Theatre</button>
+                <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="photo">Photography</button>
+                <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="kannada">Kannada</button>
+                <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="music">Music</button>
+                <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="dance">Dance</button>
+                <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="lit">Literary</button>
+                <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="tech">Technical</button>
+                <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="informal">Informal</button>
+            </div>
+            <div fx="" col="4/5" id="mainpage">
+            </div>
+            <section fx="" col="4/5" txt="c">
+                    <div id="gamesdiv" class="topicdiv">
+                        <grid>
+                            <div col = "1">
+                                <button class="but2" id="pubg" value="pubg" onclick="opclick(this.id)">PUBG Mobile</button>
+                            </div>
+                            
+                            <div col = "1">
+                                <button class="but2" id="fifa" value="fifa" onclick="opclick(this.id)">Fifa 14</button>
+                            </div>
+                            
+                            <div col = "1">
+                                <button class="but2" id="dota" value="dota" onclick="opclick(this.id)">Dota</button>
+                            </div>
+                            
+                            <div col = "1">
+                                <button class="but2" id="csgo" value="csgo" onclick="opclick(this.id)">CS:GO</button>
+                            </div>
+                            
+                            <div col = "1">
+                                <button class="but2" id="cod" value="cod" onclick="opclick(this.id)">Call Of Duty</button>
+                            </div>
+                            
+                            <div col = "1">
+                                <button class="but2" id="nfs" value="nfs" onclick="opclick(this.id)">NFS Most Wanted</button>
+                            </div>
+                        </grid>
+                    </div>
+                
+                <div id="artdiv" class="topicdiv">
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="arthunt" value="arthunt" onclick="opclick(this.id)">ART HUNT</button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="cartooning" value="cartooning" onclick="opclick(this.id)">CARTOONING</button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="facepainting" value="facepainting" onclick="opclick(this.id)">FACE PAINTING</button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="pictionary" value="pictionary" onclick="opclick(this.id)">PICTIONARY</button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="postermaking" value="postermaking" onclick="opclick(this.id)">POSTER MAKING</button>
+                        </div>
+                        
+                    </grid>
+                </div>
+                
+                <div id="dramadiv" class="topicdiv">
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="mime" value="mime" onclick="opclick(this.id)">MIME </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="madads" value="madads" onclick="opclick(this.id)">MAD ADS </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="hallabol" value="hallabol" onclick="opclick(this.id)">HALLABOL (STREET PLAY) </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="blindline" value="blindline" onclick="opclick(this.id)">THE BLIND LINE (IMPROV) </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="mockrock" value="mockrock" onclick="opclick(this.id)">MOCKROCK</button>
+                        </div>
+                    </grid>
+                </div>
+                
+                <div id="photodiv" class="topicdiv">
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="eyeshot" value="eyeshot" onclick="opclick(this.id)">EYESHOT</button>
+                        </div>
+                    </grid>
+                </div>
+                
+                <div id="kannadadiv" class="topicdiv">
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="rasaprashne" value="rasaprashne" onclick="opclick(this.id)">RASAPRASHNE </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="rasamanjari" value="rasamanjari" onclick="opclick(this.id)">RASAMANJARI </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="kgf" value="kgf" onclick="opclick(this.id)">KGF </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="pakkakannadiga" value="pakkakannadiga" onclick="opclick(this.id)">PAKKA KANNADIGA </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="radiojaata" value="radiojaata" onclick="opclick(this.id)">RADIO JAATA</button>
+                        </div>
+                    </grid>
+                </div>
+                            
+                <div id="musicdiv" class="topicdiv">
+                    <grid>
+                        <div col = "1/4">
+                          <button class="but2" id="surtaal" value="surtaal" onclick="opclick(this.id)">SUR-TAAL (SOLO/DUET) </button>
+                        </div>
+                        <div col = "1/4">
+                          <button class="but2" id="philharmonics" value="philharmonics" onclick="opclick(this.id)">PHILHARMONICS (SOLO) </button>
+                        </div>
+                        <div col = "1/4">
+                          <button class="but2" id="instrumentalsolo" value="instrumentalsolo" onclick="opclick(this.id)">INSTRUMENTAL SOLO </button>
+                        </div>
+                        <div col = "1/4">
+                          <button class="but2" id="fifthelement" value="fifthelement" onclick="opclick(this.id)">THE FIFTH ELEMENT </button>
+                        </div>
+                        <div col = "1/4">
+                          <button class="but2" id="groupsinging" value="groupsinging" onclick="opclick(this.id)">GROUP SINGING (INDIAN) </button>
+                        </div>
+                        <div col = "1/4">
+                          <button class="but2" id="battleofthebands" value="battleofthebands" onclick="opclick(this.id)">BATTLE OF THE BANDS</button>
+                        </div>
+                    </grid>
+                </div>
+                
+                <div id="dancediv" class="topicdiv">
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="kickncrew" value="kickncrew" onclick="opclick(this.id)">KICK N CREW </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="desibeats" value="desibeats" onclick="opclick(this.id)">DESI BEATS </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="kinkini" value="kinkini" onclick="opclick(this.id)">KINKINI </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="twototango" value="twototango" onclick="opclick(this.id)">TWO TO TANGO </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="1v1" value="1v1" onclick="opclick(this.id)">1 VS 1 (WESTERN) </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="switchfoot" value="switchfoot" onclick="opclick(this.id)">SWITCH FOOT</button>
+                        </div>
+                    </grid>
+                </div>
 
-	<body>
-	
-		<style>
-			
-			html{
-			
-			background-color:#222;
+                <div id="litdiv" class="topicdiv" >
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="jamwithatwist" value="jamwithatwist" onclick="opclick(this.id)">JAM WITH A TWIST </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="oldbooks" value="oldbooks" onclick="opclick(this.id)">OLD BOOKS </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="travel" value="travel" onclick="opclick(this.id)">TRAVEL </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="dontjudgeabookbyitscover" value="dontjudgeabookbyitscover" onclick="opclick(this.id)">DON'T JUDGE A BOOK BY ITS COVER </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="debate" value="debate" onclick="opclick(this.id)">DEBATE </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="fandomtwit" value="fandomtwit" onclick="opclick(this.id)">Fandom Twit</button>
+                        </div>
+                    </grid>
+                </div>
 
-			
-			}
-			
-			.topiclist{
-			
-				background:#333;
-				color:#ddd;
-				font-size:1.5em;
-				height:3em;
-				width:100%;
-				text-align:center;
-				margin-bottom:1em;
-				padding-bottom:0.6em;
-				padding-top:0.6em;
-			
-			}
-			
-			#events{
-			
-				width:80%;
-				height:70vh;
-			
-			}
-			
-			#popup{
-				
-				background-color:#111;
-				color:#ddd;
-				font-size:1.8em;
-				text-align:center;
-				height:100%;
+                <div id="techdiv" class="topicdiv">
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="codeswap" value="codeswap" onclick="opclick(this.id)">CODE SWAP </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="techhunt" value="techhunt" onclick="opclick(this.id)">TECH HUNT </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="codejam" value="codejam" onclick="opclick(this.id)">CODE JAM </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="electricalrelay" value="electricalrelay" onclick="opclick(this.id)">ELECTRICAL RELAY </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="robowars" value="robowars" onclick="opclick(this.id)">ROBOWARS </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="cryptography" value="cryptography" onclick="opclick(this.id)">CRYPTOGRAPHY </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="circuitbreaker" value="circuitbreaker" onclick="opclick(this.id)">CIRCUIT BREAKER </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="surveyhunt" value="surveyhunt" onclick="opclick(this.id)">SURVEY HUNT </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="webdesigning" value="webdesigning" onclick="opclick(this.id)">WEB DESIGNING </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="blindcircuit" value="blindcircuit" onclick="opclick(this.id)">BLIND CIRCUIT </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="emarathona" value="emarathon" onclick="opclick(this.id)">E MARATHON </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="blitzchess" value="blitzchess" onclick="opclick(this.id)">BLITZ CHESS </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="hardwarehackathon" value="hardwarehackathon" onclick="opclick(this.id)">HARDWARE HACKATHON</button>
+                        </div>
+                    </grid>
+                </div>
+                
+                <div id="informaldiv" class="topicdiv">
+                    <grid>
+                        <div col = "1/4">
+                            <button class="but2" id="mr&mrscultura" value="mr&mrscultura" onclick="opclick(this.id)">Mr. and Ms. CULTURA </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="hogothon" value="hogothon" onclick="opclick(this.id)">HOGOTHON </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="treasurehunt" value="treasurehunt" onclick="opclick(this.id)">TREASURE HUNT </button>
+                        </div>
+                        <div col = "1/4">
+                            <button class="but2" id="fashionshow" value="fashionshow" onclick="opclick(this.id)">FASHION SHOW </button>
+                        </div>
+                    </grid>
+                </div>
+                
 
-			
-			}
-			
-			#popup div{
-				
-				visibility:hidden;
-				position:absolute;
-				
-			}
-			
-			a{width:100% !important}
-		
-		</style>
-		
-		<script>
-			
-			// function show(n){
-			
-			// document.getElementById("topic1").style.visibility = "hidden";
-			// document.getElementById("topic1").style.position = "absolute";
-			
-			// document.getElementById("topic2").style.visibility = "hidden";
-			// document.getElementById("topic2").style.position = "absolute";
-			 
-			// document.getElementById("topic3").style.visibility = "hidden";
-			// document.getElementById("topic3").style.position = "absolute";
-			 
-			// document.getElementById("topic4").style.visibility = "hidden";
-			// document.getElementById("topic4").style.position = "absolute";
-			 
-			// document.getElementById("topic5").style.visibility = "hidden";
-			// document.getElementById("topic5").style.position = "absolute";
-			
-			// document.getElementById("topic"+n).style.visibility = "unset";
-			// document.getElementById("topic"+n).style.position = "unset";
-			
-			// }
-
-			var flag=0;
+            </section>
+        </div>
+        <card id="boxpop" txt="c">
+            <h3 id="eventname"><strong>Name</strong></h3>
+            <p id="eventtagl">Details and an Image</p>
+            <div txt="l" id="scrollable">
+                <h4 class="headingevent" id="eventdetailsh"><strong>Description :</strong></h4>
+                <p id="eventdetails">Details</p>
+                <h4 class="headingevent" id="eventrulesh"><strong>Rules and Regulations :</strong></h4>
+                <p id="eventrules">Rules</p>
+                <h4 class="headingevent" id="eventadditionalh"><strong>Additional :</strong></h4>
+                <p id="eventadditional">Additional</p>
+                <h4 class="headingevent" id="eventcontacth"><strong>Contact Details :</strong></h4>
+                <p id="eventcontact">Additional</p>
+            </div>
+            <button class="boxbut">Register</button>
+            <button class="boxbut" onclick="closebox()">Close</button>
+        </card>
+        
+        <script>
+            
+            var flag=0;
             var temp=0;
             var stopic=0;
             var prev=0;
@@ -434,132 +626,198 @@
             
             }
             //*/
-			
-			
-		</script>
-		
-		<div id="events">
-			
-			<grid>
-				
-				<div fx col="1/3">
+            
+            
+        </script>
+        <style>
+            
+            body{
+                padding: 0;
+                margin: 0;
+            }
+            
+            #maincontainer{
+                width: 100vw;
+                height: 100vh;
+                background-color: black;
+            }
+            
+            #inlinelist{
+                display: flex;
+                justify-content: space-between;
+                width: 100vw;
+                overflow-y: hidden;
+            }
 
-				
+            #inlinelist::-webkit-scrollbar{
+                height: 10px;
+                width: 10px;
+                
+            }
 
-					<div class="topiclist" class="gaming">
-						Gaming
-					</div>
-					
-					<div class="topiclist" class="art">
-						Art
-					</div>
-					
-					<div class="topiclist" class="theatre">
-						Theatre
-					</div>
-					
-					<div class="topiclist" class="photography">
-						Photography
-					</div>
-					
-					<div class="topiclist" class="kannada">
-						Kannada
-					</div>
-					
-					<div class="topiclist" class="music">
-						Music
-					</div>
-					
-					<div class="topiclist" class="dance">
-						Dance
-					</div>
-					
-					<div class="topiclist" class="literary">
-						Literary
-					</div>
-					
-					<div class="topiclist" class="technical">
-						Technical
-					</div>
-					
-					<div class="topiclist" class="informal">
-						Informal
-					</div>
-				</div>
-				
-				<div fx col="2/3" >
-					
-					<div id="popup">
-						
-						<div id="topic1">
-							<div id="gamesdiv" class="topicdiv">
-								<grid>
-									<div col = "1/4">
-										<button class="but2" id="pubg" value="pubg" onclick="opclick(this.id)">PUBG Mobile</button>
-									</div>
-									
-									<div col = "1/4">
-										<button class="but2" id="fifa" value="fifa" onclick="opclick(this.id)">Fifa 14</button>
-									</div>
-									
-									<div col = "1/4">
-										<button class="but2" id="dota" value="dota" onclick="opclick(this.id)">Dota</button>
-									</div>
-									
-									<div col = "1/4">
-										<button class="but2" id="csgo" value="csgo" onclick="opclick(this.id)">CS:GO</button>
-									</div>
-									
-									<div col = "1/4">
-										<button class="but2" id="cod" value="cod" onclick="opclick(this.id)">Call Of Duty</button>
-									</div>
-									
-									<div col = "1/4">
-										<button class="but2" id="nfs" value="nfs" onclick="opclick(this.id)">NFS Most Wanted</button>
-									</div>
-								</grid>
-							</div>
-						</div>
-						
-						<div class="theatre" class="events">
-							Theatre
-						</div>
-						
-						<div class="photography" class="events">
-							Photography
-						</div>
-						
-						<div class="kannada" class="events">
-							Kannada
-						</div>
-						
-						<div class="music" class="events">
-							Music
-						</div>
-						
-						<div class="dance" class="events">
-							Dance
-						</div>
-						
-						<div class="literary" class="events">
-							Literary
-						</div>
-						
-						<div class="technical" class="events">
-							Technical
-						</div>
-						
-						<div class="informal" class="events">
-							Informal
-						</div>
-					</div>
-					
-				</div>	
-				
-			
-			</grid>
-			
-		</section>
-	
-	</body>
-</body>
+            #inlinelist::-webkit-scrollbar-track
+            {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 10px;
+                background-color: #F5F5F5;
+            }
+
+            #inlinelist::-webkit-scrollbar
+            {
+                width: 12px;
+                background-color: #F5F5F5;
+            }
+
+            #inlinelist::-webkit-scrollbar-thumb
+            {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                background-color: #559;
+            }
+
+            #inline
+            
+            .but2{
+                border: 2px solid black;
+                width: 8em;
+                height: 3em;
+                border-radius: 2em;
+                background-color: darkslategray;
+            }
+            
+            .gamesbg{
+                background: url(./img/game.gif);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                filter: opacity(30%) blur(4px);
+            }
+            
+            #mainpage{
+                width: 100vw;
+                height: 80vh;
+                background-color: black;
+                position: absolute;
+            }
+
+            #eventdetails, #eventrules, #eventadditional, #eventcontact {
+                
+                padding-left:2em;
+                font-size:1.12em;
+            
+            }
+        
+            .headingevent{
+                
+                font-size:1.25em;
+            
+            }
+            
+            .but2:hover{
+                background-color: darkslateblue
+            }
+            
+            .boxbut{
+                background-color: #222;
+                color: white;
+                border-color: #fff0;
+                border-bottom: 2px solid #f05;
+                font-size:1.3em !important;
+                transition:1s linear;
+                font-size:1em;
+                padding:1em;
+                
+            }
+            
+            .boxbut:hover{
+                background-color: #333;
+                color: #f05;
+            }
+            
+            .but:active{
+                background-color: #f05;
+            }
+
+            
+            .but{
+                background-color: #222;
+                font-size:1.5em;
+                color: white;
+                border-radius: 0;
+                border: 2px solid #111;
+                padding:0.5em;
+                transition:0.5s linear;
+            }
+
+            .but:hover{
+                background-color: #888;
+                color: #111;
+            }
+            
+            .but:active{
+                background-color: blue;
+            }
+
+            .topicdiv{
+                display: none;
+            }
+            
+            #boxpop{
+                display: none;
+                position: fixed;
+                height: 100%;
+                width: 1050%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color:#0c0c0c;
+                border-bottom: 5px solid #f05;
+                padding:2em;
+                padding-bottom:4em;
+                color:#eee;
+                /* perfectly centered 
+                but not responsive*/
+            }
+            
+            #scrollable{
+                height: 75%;
+                overflow: auto;
+                margin:2em;
+                margin-bottom:1em;
+            }
+
+            @media only screen and (max-width: 1000px) {
+                #boxpop{
+                    height: 70%;
+                    width: 80%;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                #boxpop{
+                    height: 70%;
+                    width: 95%;
+                }
+            }
+
+            @media only screen and (max-height: 720px) {
+                #scrollable{
+                    height: 68%;
+                }
+            }
+
+            @media only screen and (max-height: 600px) {
+                #scrollable{
+                    height: 65%;
+                }
+            }
+
+            @media only screen and (max-height: 530px) {
+                #scrollable{
+                    height: 60%;
+                }
+            }
+        
+        </style>
+    </body>
+</html>

@@ -8,7 +8,8 @@
     <body>
         
         <div id="maincontainer">
-            <div id="inlinelist">
+        <grid>
+            <div fx="" col="1/5" id="inlinelist">
                 <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="games">Gaming</button>
                 <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="art">Art</button>
                 <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="drama">Theatre</button>
@@ -20,32 +21,32 @@
                 <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="tech">Technical</button>
                 <button class="but" onmouseover="topicin(this.id)" onmouseout="topicout()" onclick="topicclick(this.id)" id="informal">Informal</button>
             </div>
-            <div id="mainpage">
+            <div fx="" col="4/5" id="mainpage">
             </div>
-            <section txt="c">
+            <section fx="" col="4/5" txt="c">
                     <div id="gamesdiv" class="topicdiv">
                         <grid>
-                            <div col = "1/4">
+                            <div col = "1">
                                 <button class="but2" id="pubg" value="pubg" onclick="opclick(this.id)">PUBG Mobile</button>
                             </div>
                             
-                            <div col = "1/4">
+                            <div col = "1">
                                 <button class="but2" id="fifa" value="fifa" onclick="opclick(this.id)">Fifa 14</button>
                             </div>
                             
-                            <div col = "1/4">
+                            <div col = "1">
                                 <button class="but2" id="dota" value="dota" onclick="opclick(this.id)">Dota</button>
                             </div>
                             
-                            <div col = "1/4">
+                            <div col = "1">
                                 <button class="but2" id="csgo" value="csgo" onclick="opclick(this.id)">CS:GO</button>
                             </div>
                             
-                            <div col = "1/4">
+                            <div col = "1">
                                 <button class="but2" id="cod" value="cod" onclick="opclick(this.id)">Call Of Duty</button>
                             </div>
                             
-                            <div col = "1/4">
+                            <div col = "1">
                                 <button class="but2" id="nfs" value="nfs" onclick="opclick(this.id)">NFS Most Wanted</button>
                             </div>
                         </grid>
@@ -766,8 +767,8 @@
             #boxpop{
                 display: none;
                 position: fixed;
-                height: 70%;
-                width: 50%;
+                height: 100%;
+                width: 100%;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
