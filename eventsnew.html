@@ -11,11 +11,11 @@
             <label id="lbl">
                 <input type="checkbox">
                 <header>
-                    <a id="nav title" href="#container_main"><img src="./img/logo-sane.png">Cultura 19</a>
+                    <a id="nav title" href="./index.html"><img src="./img/logo-sane.png">Cultura 19</a>
                 </header>
                 <ul>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Registration</a></li>
+                  <li><a href="./eventsnew.html">Events</a></li>
+                  <li><a href="https://www.instamojo.com/@CULTURA/">Registration</a></li>
                   <li><a href="#">Headliners</a></li>
                   <li><a href="#">Sponsors</a></li>
                   <li><a href="#">About Cultura</a></li>
@@ -410,7 +410,7 @@
             </grid>
         </div>
         </section>
-        <card id="boxpop" txt="c">
+        <div id="boxpop" txt="c">
             <h3 id="eventname"><strong>Name</strong></h3>
             <p id="eventtagl">Details and an Image</p>
             <div txt="l" id="scrollable">
@@ -425,9 +425,9 @@
             </div>
             <div id="buttonbar">
                 <button class="boxbut"><a href="https://www.instamojo.com/@CULTURA/" rel="im-checkout" data-behaviour="remote" data-style="dark" data-text="Checkout With Instamojo">Register</a></button>
-                <button class="boxbut" onclick="closebox()">Close</button>
+                <button class="boxbut" onclick="goback()">Back</button>
             </div>
-        </card>
+        </div>
 
         </div>
 
@@ -439,6 +439,9 @@
 
         <style>
 
+            body{
+                overflow: auto;
+            }
             #page1{
                 height: 100vh;
                 overflow: auto;
@@ -500,6 +503,7 @@
                 padding:2em;
                 padding-bottom:4em;
                 color:#EEE;
+                overflow: auto;
             }
 
             #buttonbar{
@@ -515,7 +519,32 @@
                 margin-bottom:1em;
             }
 
+            #buttonbar{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
 
+            .boxbut{
+                background-color: #222;
+                color: white;
+                border-color: #fff0;
+                border-bottom: 2px solid #f05;
+                font-size:1.3em !important;
+                transition:1s linear;
+                font-size:1em;
+                padding:1em;
+                
+            }
+
+            .boxbut:hover{
+                background-color: #333;
+                color: #f05;
+            }
+
+            .bodas{
+                background-image: url(./img/)
+            }
         </style>
         <script>
 
@@ -523,7 +552,7 @@
 
         function topicclick(topic){
           curid = topic+"div";
-          document.getElementById("page1").style="display:none; height: 0vh";
+          document.getElementById("page1").style="display:none; height: 0vh; background-img";
           document.getElementById(curid).style ="display:unset";
 
         }
@@ -1316,7 +1345,7 @@
             }
 
             function goback(){
-                document.getElementById("eventspage").style="display:unset";
+                document.getElementById("eventspage").style="display:block";
                 document.getElementById("boxpop").style="display:none";
 
             };
