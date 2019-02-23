@@ -410,7 +410,7 @@
             </grid>
         </div>
         </section>
-        <div id="boxpop" txt="c">
+        <card id="boxpop" txt="c">
             <h3 id="eventname"><strong>Name</strong></h3>
             <p id="eventtagl">Details and an Image</p>
             <div txt="l" id="scrollable">
@@ -427,7 +427,7 @@
                 <button class="boxbut"><a id="regbut" rel="im-checkout" data-behaviour="remote" data-style="dark" data-text="Checkout With Instamojo">Register</a></button>
                 <button class="boxbut" onclick="goback()">Back</button>
             </div>
-        </div>
+        </card>
 
         </div>
 
@@ -500,25 +500,48 @@
                 width: 100vw;
                 background-color:#222;
                 box-shadow: 0 0 0 0 rgba(0,0,0,0);
-                padding:2em;
                 padding-bottom:4em;
                 color:#EEE;
             }
 
-            #buttonbar{
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-
             #scrollable{
-                height: 75%;
+                background-color: #111;
+                height: 58vh;
                 overflow: auto;
                 margin:2em;
                 margin-bottom:1em;
             }
+            
+            #scrollable::-webkit-scrollbar{
+                height: 10px;
+                width: 10px;
+                
+            }
+
+            #scrollable::-webkit-scrollbar-track
+            {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+                border-radius: 10px;
+                background-color: #000;
+            }
+
+            #scrollable::-webkit-scrollbar
+            {
+                width: 12px;
+                background-color: #F5F5F5;
+            }
+
+            #scrollable::-webkit-scrollbar-thumb
+            {
+                border-radius: 10px;
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+                background-color: #559;
+            }
 
             #buttonbar{
+                position: fixed;
+                bottom: 0;
+                width: 100vw;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
@@ -543,6 +566,15 @@
 
             .bodas{
                 background-image: url(./img/)
+            }
+
+            @media only screen and (max-width: 420px) {
+                #scrollable{
+                    height: 50vh;
+                    overflow: auto;
+                    margin:2em;
+                    margin-bottom:1em;
+                }
             }
         </style>
         <script>
