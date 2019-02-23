@@ -150,11 +150,11 @@
               -->
 
 
-              <grid fx="">
+              <grid>
                   <div col = "1/3">
                       <card class="topic-cards" id="pubg" value="pubg" onclick="opclick(this.id)">
                         <h5>PUBG Mobile</h5>
-                          <img src="club logos/pubg.png">
+                        <img src="club logos/pubg.png">
                       </card>
                   </div>
 
@@ -424,7 +424,7 @@
                 <p id="eventcontact">Additional</p>
             </div>
             <div id="buttonbar">
-                <button class="boxbut"><a href="https://www.instamojo.com/@CULTURA/" rel="im-checkout" data-behaviour="remote" data-style="dark" data-text="Checkout With Instamojo">Register</a></button>
+                <button class="boxbut"><a id="regbut" rel="im-checkout" data-behaviour="remote" data-style="dark" data-text="Checkout With Instamojo">Register</a></button>
                 <button class="boxbut" onclick="goback()">Back</button>
             </div>
         </div>
@@ -548,6 +548,7 @@
         <script>
 
         var curid;
+        var reglink;
 
         function topicclick(topic){
           curid = topic+"div";
@@ -1066,6 +1067,7 @@
                     document.getElementById("eventrules").innerHTML = topics[stopic][3];
                     document.getElementById("eventadditional").innerHTML = topics[stopic][4];
                     document.getElementById("eventcontact").innerHTML = topics[stopic][5];
+                    document.getElementById("regbut").setAttribute("href", reglink);
         }
 
         // function closebox(){
@@ -1081,11 +1083,13 @@
                     case "pubg":
 
                         stopic = 1;
+                        reglink = "https://imjo.in/c9pH7j";
                         break;
 
                     case "fifa":
 
                         stopic = 2;
+                        reglink = "";
                         break;
 
                     case "dota":
