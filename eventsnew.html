@@ -7,6 +7,7 @@
         <title>Events</title>
     </head>
     <body>
+      <img  id="bgimg">
         <nav id="navbar">
             <label id="lbl">
                 <input type="checkbox">
@@ -658,6 +659,8 @@
                 overflow: auto;
                 margin:2em;
                 margin-bottom:1em;
+                padding: 2em;
+                max-width:70%;
             }
 
             #scrollable::-webkit-scrollbar{
@@ -741,6 +744,20 @@
 
             }
 
+            #bgimg{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 99vw;
+              background-image: url("./img/intro.jpg");
+              background-color: #FFF;
+              height: 100vh;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              filter: blur(5px);
+            }
+
             @media only screen and (max-width: 420px) {
                 #scrollable{
                     height: 50vh;
@@ -758,13 +775,16 @@
         function topicclick(topic){
           curid = topic+"div";
           document.getElementById("page1").style="display:none; height: 0vh;";
-          document.getElementById("forbgimg").style ="background-image: url(\"./img/"+topic+".gif\");";
+          document.getElementById("bgimg").style="display:none;"
+          document.getElementById("forbgimg").style ="background-image: url(\"./img/"+topic+".gif\"); display:unset;";
           document.getElementById(curid).style ="display:unset; filter: opacity(0) blur(0);";
         }
 
         function backclicked(){
-          document.getElementById("page1").style="display:unset; height: 100vh";
-          document.getElementById(curid).style = "display:none;"
+        document.getElementById("bgimg").style="display:unset"
+        document.getElementById("forbgimg").style ="display:none;";
+        document.getElementById("page1").style="display:block; height: 100vh";
+        document.getElementById(curid).style = "display:none;"
         }
 
         function opclick(x){
@@ -1590,11 +1610,6 @@
                         stopic = 57;
                         reglink = "https://imjo.in/RU82Xj";
                         break;
-
-
-
-
-
 
                     default:
                         stopic = 0;
