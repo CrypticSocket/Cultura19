@@ -7,6 +7,7 @@
         <title>Events</title>
     </head>
     <body>
+      <img  id="bgimg">
         <nav id="navbar">
             <label id="lbl">
                 <input type="checkbox">
@@ -560,16 +561,16 @@
         <card id="boxpop" txt="c">
             <h3 id="eventname"><strong>Name</strong></h3>
             <p id="eventtagl">Details and an Image</p>
-            <div txt="l" id="scrollable">
-                <h4 class="headingevent" id="eventdetailsh"><strong>Description :</strong></h4>
-                <p id="eventdetails">Details</p>
-                <h4 class="headingevent" id="eventrulesh"><strong>Rules and Regulations :</strong></h4>
-                <p id="eventrules">Rules</p>
-                <h4 class="headingevent" id="eventadditionalh"><strong>Additional :</strong></h4>
-                <p id="eventadditional">Additional</p>
-                <h4 class="headingevent" id="eventcontacth"><strong>Contact Details :</strong></h4>
-                <p id="eventcontact">Additional</p>
-            </div>
+              <div txt="l" id="scrollable">
+                  <h4 class="headingevent" id="eventdetailsh"><strong>Description :</strong></h4>
+                  <p id="eventdetails">Details</p>
+                  <h4 class="headingevent" id="eventrulesh"><strong>Rules and Regulations :</strong></h4>
+                  <p id="eventrules">Rules</p>
+                  <h4 class="headingevent" id="eventadditionalh"><strong>Additional :</strong></h4>
+                  <p id="eventadditional">Additional</p>
+                  <h4 class="headingevent" id="eventcontacth"><strong>Contact Details :</strong></h4>
+                  <p id="eventcontact">Additional</p>
+              </div>
             <div id="buttonbar">
                 <button class="boxbut"><a id="regbut" rel="im-checkout" data-behaviour="remote" data-style="dark" data-text="Checkout With Instamojo">Register</a></button>
                 <button class="boxbut" onclick="goback()">Back</button>
@@ -658,6 +659,8 @@
                 overflow: auto;
                 margin:2em;
                 margin-bottom:1em;
+                padding: 2em;
+                max-width:70%;
             }
 
             #scrollable::-webkit-scrollbar{
@@ -741,6 +744,20 @@
 
             }
 
+            #bgimg{
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 99vw;
+              background-image: url("./img/intro.jpg");
+              background-color: #FFF;
+              height: 100vh;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              filter: blur(5px);
+            }
+
             @media only screen and (max-width: 420px) {
                 #scrollable{
                     height: 50vh;
@@ -756,16 +773,18 @@
         var reglink;
 
         function topicclick(topic){
-          curid = topic+"div";
-          document.getElementById("page1").style="display:none; height: 0vh;";
-          document.getElementById("forbgimg").style ="background-image: url(\"./img/"+topic+".gif\");";
-          document.getElementById(curid).style ="display:unset; filter: opacity(0) blur(0);";
-        }
+         curid = topic+"div";
+         document.getElementById("page1").style="display:none; height: 0vh;";
+         document.getElementById("bgimg").style="display:none;"
+         document.getElementById("forbgimg").style ="background-image: url(\"./img/"+topic+".gif\");";
+         document.getElementById(curid).style ="display:unset; filter: opacity(0) blur(0);";
+       }
 
-        function backclicked(){
-          document.getElementById("page1").style="display:unset; height: 100vh";
-          document.getElementById(curid).style = "display:none;"
-        }
+       function backclicked(){
+           document.getElementById("bgimg").style="display:unset"
+         document.getElementById("page1").style="display:block; height: 100vh";
+         document.getElementById(curid).style = "display:none;"
+       }
 
         function opclick(x){
           document.getElementById("eventspage").style="display:none";
@@ -1590,11 +1609,6 @@
                         stopic = 57;
                         reglink = "https://imjo.in/RU82Xj";
                         break;
-
-
-
-
-
 
                     default:
                         stopic = 0;
