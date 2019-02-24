@@ -25,39 +25,32 @@ function animateCircles(event){
 }
 
 
-//------------------
-//timer part
+// //------------------
+// //timer part
 
-//set the date HERE
-var countDownDate = new Date("Mar 22, 2019 00:00:00").getTime();
+// //set the date HERE
+// var countDownDate = new Date("Mar 22, 2019 00:00:00").getTime();
 
-//update the countDown every 1 section
-var countdownfunction = setInterval(
-  function()
-  {
-    var now = new Date().getTime();
-    var distance = countDownDate - now;
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+// //update the countDown every 1 section
+// var countdownfunction = setInterval(
+//   function()
+//   {
+//     var now = new Date().getTime();
+//     var distance = countDownDate - now;
+//     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    //output element's id = demo
-    document.getElementById("demo").innerHTML = days + "<span class='timer-labels'>d </span>" + hours +  "<span class='timer-labels'>h </span>" + minutes + "<span class='timer-labels'>m </span>" + seconds + "<span class='timer-labels'>s </span>";
+//     //output element's id = demo
+//     document.getElementById("demo").innerHTML = days + "<span class='timer-labels'>d </span>" + hours +  "<span class='timer-labels'>h </span>" + minutes + "<span class='timer-labels'>m </span>" + seconds + "<span class='timer-labels'>s </span>";
 
-    //if countdown is over will write something HERE [ ONCE THE TIMER IS DONE WE'LL HAVE TO REPLACE THIS BIT. ]
+//     //if countdown is over will write something HERE [ ONCE THE TIMER IS DONE WE'LL HAVE TO REPLACE THIS BIT. ]
 
-    if (distance < 0) {
-      clearInterval(countdownfunction);
-      document.getElementById("demo").innerHTML = "its on..blah blah!!";
-    }
+//     if (distance < 0) {
+//       clearInterval(countdownfunction);
+//       document.getElementById("demo").innerHTML = "its on..blah blah!!";
+//     }
 
 
-  } , 1000);
-
-//wait dont change anything right now. il get confused.  XD
-
-//-------------------
-// introducing le sparklez !
-// sparkles a temporary failure.
-//lol
+//   } , 1000);
