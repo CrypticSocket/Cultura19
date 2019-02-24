@@ -3,27 +3,26 @@ document.onmousemove = animateCircles;
 var colors = ['#50f' , '#90f', '#28d' , '#f55', '#0af', "#80f"];
 
 function animateCircles(event){
-    var circle = document.createElement("div");
-    circle.setAttribute("class", "circle");
-    document.body.appendChild(circle);
+    // var circle = document.createElement("div");
+    // circle.setAttribute("class", "circle");
+    // document.body.appendChild(circle);
 
-    circle.style.left = event.clientX + 'px';
-    circle.style.top = event.clientY + 'px';
+    // circle.style.left = event.clientX + 'px';
+    // circle.style.top = event.clientY + 'px';
 
-    var colbg = colors[Math.floor(Math.random() * colors.length)];
-    var colbd = colors[Math.floor(Math.random() * colors.length)];
-    circle.style.borderColor = colbd;
-    circle.style.background = colbg;
-    circle.style.transition = "all 0.3s linear 0.2s";
+    // var colbg = colors[Math.floor(Math.random() * colors.length)];
+    // var colbd = colors[Math.floor(Math.random() * colors.length)];
+    // circle.style.borderColor = colbd;
+    // circle.style.background = colbg;
+    // circle.style.transition = "all 0.3s linear 0.2s";
 
-    circle.style.right = circle.offsetLeft - 20 + 'px';
+    // circle.style.right = circle.offsetLeft - 20 + 'px';
 
-    circle.style.width = "30px";
-    circle.style.height= "30px";
+    // circle.style.width = "30px";
+    // circle.style.height= "30px";
 
-    circle.style.opacity=0;
+    // circle.style.opacity=0;
 }
-
 
 //------------------
 //timer part
