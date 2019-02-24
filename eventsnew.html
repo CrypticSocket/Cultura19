@@ -118,7 +118,7 @@
 
                 Starting Event Pages here  -->
                 <div id="forbgimg"></div>
-        <section id="eventspage">
+        <section id="eventspage" txt="c">
 
           <div id="gamesdiv" class="topicdiv">
             <p><button id="backbutton" onclick="backclicked()">Back</button></p>
@@ -151,57 +151,59 @@
               -->
 
 
-              <grid>
-                  <div col = "1/3">
-                      <card class="topic-cards" id="pubg" value="pubg" onclick="opclick(this.id)">
-                        <h5>PUBG Mobile</h5>
-                        <img src="club logos/pubg.png">
-                      </card>
-                  </div>
-
-                  <div col = "1/3">
-                      <card class="topic-cards" id="fifa" value="fifa" onclick="opclick(this.id)">
-                        <h5>FIFA 14</h5>
-                          <img src="club logos/fifa.png">
-                      </card>
-                  </div>
-
-
-                  <div col = "1/3">
-                      <card class="topic-cards" id="dota" value="dota" onclick="opclick(this.id)">
-                        <h5>DOTA</h5>
-                          <img src="club logos/dota.png">
-                      </card>
-                  </div>
-
-
-                  <div col = "1/3">
-                      <card class="topic-cards" id="csgo" value="csgo" onclick="opclick(this.id)">
-                        <h5>CS:GO</h5>
-                          <img src="club logos/csgo.png">
-                      </card>
-                  </div>
-
-
-                  <div col = "1/3">
-                      <card class="topic-cards" id="cod" value="cod" onclick="opclick(this.id)">
-                        <h5>Call Of Duty</h5>
-                          <img src="club logos/cod.png">
-                      </card>
-                  </div>
-
-
-                  <div col = "1/3">
-                      <card class="topic-cards" id="nfs" value="nfs" onclick="opclick(this.id)">
-                        <h5>NFS MOST WANTED</h5>
-                          <img src="club logos/nfsmw.png">
-                      </card>
-                  </div>
-
-              </grid>
-
-
-            </div>
+              <section txt="c">
+                <grid>
+                    <div col = "1/3">
+                        <card class="topic-cards" id="pubg" value="pubg" onclick="opclick(this.id)">
+                          <h5>PUBG Mobile</h5>
+                          <img src="club logos/pubg.png">
+                        </card>
+                    </div>
+  
+                    <div col = "1/3">
+                        <card class="topic-cards" id="fifa" value="fifa" onclick="opclick(this.id)">
+                          <h5>FIFA 14</h5>
+                            <img src="club logos/fifa.png">
+                        </card>
+                    </div>
+  
+  
+                    <div col = "1/3">
+                        <card class="topic-cards" id="dota" value="dota" onclick="opclick(this.id)">
+                          <h5>DOTA</h5>
+                            <img src="club logos/dota.png">
+                        </card>
+                    </div>
+  
+  
+                    <div col = "1/3">
+                        <card class="topic-cards" id="csgo" value="csgo" onclick="opclick(this.id)">
+                          <h5>CS:GO</h5>
+                            <img src="club logos/csgo.png">
+                        </card>
+                    </div>
+  
+  
+                    <div col = "1/3">
+                        <card class="topic-cards" id="cod" value="cod" onclick="opclick(this.id)">
+                          <h5>Call Of Duty</h5>
+                            <img src="club logos/cod.png">
+                        </card>
+                    </div>
+  
+  
+                    <div col = "1/3">
+                        <card class="topic-cards" id="nfs" value="nfs" onclick="opclick(this.id)">
+                          <h5>NFS MOST WANTED</h5>
+                            <img src="club logos/nfsmw.png">
+                        </card>
+                    </div>
+  
+                </grid>
+  
+  
+              </div>
+              </section>
 
         <div id="artdiv" class="topicdiv">
           <p><button id="backbutton" onclick="backclicked()">Back</button></p>
@@ -561,16 +563,16 @@
         <card id="boxpop" txt="c">
             <h3 id="eventname"><strong>Name</strong></h3>
             <p id="eventtagl">Details and an Image</p>
-            <div txt="l" id="scrollable">
-                <h4 class="headingevent" id="eventdetailsh"><strong>Description :</strong></h4>
-                <p id="eventdetails">Details</p>
-                <h4 class="headingevent" id="eventrulesh"><strong>Rules and Regulations :</strong></h4>
-                <p id="eventrules">Rules</p>
-                <h4 class="headingevent" id="eventadditionalh"><strong>Additional :</strong></h4>
-                <p id="eventadditional">Additional</p>
-                <h4 class="headingevent" id="eventcontacth"><strong>Contact Details :</strong></h4>
-                <p id="eventcontact">Additional</p>
-            </div>
+              <div txt="l" id="scrollable">
+                  <h4 class="headingevent" id="eventdetailsh"><strong>Description :</strong></h4>
+                  <p id="eventdetails">Details</p>
+                  <h4 class="headingevent" id="eventrulesh"><strong>Rules and Regulations :</strong></h4>
+                  <p id="eventrules">Rules</p>
+                  <h4 class="headingevent" id="eventadditionalh"><strong>Additional :</strong></h4>
+                  <p id="eventadditional">Additional</p>
+                  <h4 class="headingevent" id="eventcontacth"><strong>Contact Details :</strong></h4>
+                  <p id="eventcontact">Additional</p>
+              </div>
             <div id="buttonbar">
                 <button class="boxbut"><a id="regbut" rel="im-checkout" data-behaviour="remote" data-style="dark" data-text="Checkout With Instamojo">Register</a></button>
                 <button class="boxbut" onclick="goback()">Back</button>
@@ -645,6 +647,8 @@
             /* rename if you want */
             #boxpop{
                 display: none;
+                flex-direction: column;
+                align-items: center;
                 height: 100vh;
                 width: 100vw;
                 background-color:#222;
@@ -720,7 +724,7 @@
             }
 
             #forbgimg{
-                position: absolute;
+                position: fixed;
                 height: 100vh;
                 width: 100vw;
                 background-repeat: no-repeat;
@@ -773,23 +777,22 @@
         var reglink;
 
         function topicclick(topic){
-          curid = topic+"div";
-          document.getElementById("page1").style="display:none; height: 0vh;";
-          document.getElementById("bgimg").style="display:none;"
-          document.getElementById("forbgimg").style ="background-image: url(\"./img/"+topic+".gif\"); display:unset;";
-          document.getElementById(curid).style ="display:unset; filter: opacity(0) blur(0);";
-        }
+         curid = topic+"div";
+         document.getElementById("page1").style="display:none; height: 0vh;";
+         document.getElementById("bgimg").style="display:none;"
+         document.getElementById("forbgimg").style ="background-image: url(\"./img/"+topic+".gif\");";
+         document.getElementById(curid).style ="display:unset; filter: opacity(0) blur(0);";
+       }
 
-        function backclicked(){
+       function backclicked(){
         document.getElementById("bgimg").style="display:unset"
-        document.getElementById("forbgimg").style ="display:none;";
-        document.getElementById("page1").style="display:block; height: 100vh";
-        document.getElementById(curid).style = "display:none;"
-        }
+         document.getElementById("page1").style="display:block; height: 100vh";
+         document.getElementById(curid).style = "display:none;"
+       }
 
         function opclick(x){
           document.getElementById("eventspage").style="display:none";
-          document.getElementById("boxpop").style="display:block";
+          document.getElementById("boxpop").style="display:flex";
           setoptionnum(x);
 
                 var topics = [
