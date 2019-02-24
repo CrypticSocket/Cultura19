@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./bare.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="bg">
+            <section txt="c">
+                <card id="card_div" onmouseover="movein()" onmouseout="moveout()"> 
+                    <h3>Cultura <span id="b">19</span></h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Soluta reiciendis quia similique mollitia rem eligendi perspiciatis assumenda ipsam. 
+                        Beatae quidem id dolores ipsum similique et cum eaque repellat nisi modi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Soluta reiciendis quia similique mollitia rem eligendi perspiciatis assumenda ipsam. 
+                        Beatae quidem id dolores ipsum similique et cum eaque repellat nisi modi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Soluta reiciendis quia similique mollitia rem eligendi perspiciatis assumenda ipsam. 
+                        Beatae quidem id dolores ipsum similique et cum eaque repellat nisi modi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Soluta reiciendis quia similique mollitia rem eligendi perspiciatis assumenda ipsam. 
+                        Beatae quidem id dolores ipsum similique et cum eaque repellat nisi modi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Soluta reiciendis quia similique mollitia rem eligendi perspiciatis assumenda ipsam. 
+                        Beatae quidem id dolores ipsum similique et cum eaque repellat nisi modi.
+                    </p>
+                </card>
+            </section>
+            <div id="box1"></div>
+            <div id="box2"></div>
+        </div>
+        
+        <style>
+            
+            #b{
+                color: blue;
+            }
+            #card_div{
+                box-shadow: 0px 0px 100px #88A;
+                z-index: 1;
+            }
+            
+            section{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width:100vw;
+                height: 100vh;
+            }
+            
+            #bg{
+    /*            background-color: blue;*/
+            }
+            
+            .box1{
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                border: 2px solid black;
+                position: absolute;
+                left: 0;
+                top: 0;
+                animation-name: runaround;
+                animation-iteration-count: infinite;
+                animation-duration: 2s;
+            }
+            
+            .box2{
+                width: 50px;
+                height: 50px;
+                background-color: blue;
+                border: 2px solid black;
+                position: absolute;
+                left: 0;
+                top: 0;
+                animation-name: runaround;
+                animation-iteration-count: infinite;
+                animation-duration: 2s;
+                animation-direction: reverse;
+            }
+            
+            @keyframes runaround{
+                0%{
+                    top: 10vh;
+                    left: 10vw;
+                }
+                25%{
+                    top: 10vh;
+                    left: 90vw;
+                }
+                50%{
+                    top: 90vh;
+                    left: 90vw;
+                }
+                75%{
+                    top: 90vh;
+                    left: 10vw;
+                }
+                100%{
+                    top:10vh;
+                    left: 10vw;
+                }
+            }
+            
+            
+            
+        </style>
+        <script>
+            function movein(){
+                document.getElementById("bg").style.backgroundColor="#000000";
+                document.getElementById("box1").setAttribute("class", "box1");
+                document.getElementById("box2").setAttribute("class", "box2");
+            }
+            function moveout(){
+                document.getElementById("bg").style.backgroundColor="#FFF";
+                document.getElementById("box1").setAttribute("class", "");
+                document.getElementById("box2").setAttribute("class", "");
+            }
+        </script>
+    </body>
+</html>
