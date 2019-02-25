@@ -21,26 +21,19 @@
             </label>
         </nav>
 
-        <section id="main">
-            <section id="cmr">
-                <h2>About CMRIT</h2>
-                
-                CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRI
-                CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT
-                CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT
-                CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT CMRIT
-            </section>
+        <grid>
 
-            <section id="cultura">
-                    <h2>About Cultura</h2>
-                
-                    CULTURA CULTURA CULTURA CULTURA CULTURA CULTURA 
-                    CULTURA CULTURA CULTURA CULTURA CULTURA CULTURA
-                    CULTURA CULTURA CULTURA CULTURA CULTURA CULTURA
-                    CULTURA CULTURA CULTURA CULTURA CULTURA CULTURA
-                </section>
+            <div fx col="1/3" id="submenu" >
+                <a>WEB</a>
+                <a>APP</a>
+                <a>OC</a>
+            </div>
 
-        </section>
+            <div fx col="2/3" id="slidecontainer">
+                BLAH
+            </div>
+
+        </grid>
 
         
 
@@ -57,17 +50,40 @@
             #main{
 
                 padding:2em;
+                width:100vw;
 
             }
 
-            #cmr, #cultura{
+            #submenu{
 
-                background-color: #111;
-                width:80%;
-                border-bottom:2px  ;
+                background-color: #222;
                 color:#ccc !important;
-                margin-bottom:2em;
                 text-align: center;
+                margin:auto;
+                height:100vh;
+                /**/
+                display: inline-flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: space-around;
+                font-size:2rem;
+                /**/
+            }
+
+            #submenu a{
+
+                height:4em;
+                border-bottom: #555;
+                border-top:#555;
+                background-color: #555;
+
+            }
+
+            #slidecontainer{
+
+                height:100vh;
+                
+
             }
             
 
