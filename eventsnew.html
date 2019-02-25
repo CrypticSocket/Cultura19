@@ -4,24 +4,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" media="screen" href="./css/bare.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Nova+Flat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+
         <title>Events</title>
     </head>
     <body>
       <img  id="bgimg">
-      <nav id="navbar">
-        <label id="lbl">
-          <input type="checkbox">
-          <header>
-            <a id="nav title" href="./index.html"><img src="./img/logo-sane.png">Cultura 19</a>
-          </header>
-          <ul>
-            <li><a href="./eventsnew.html">Events</a></li>
-            <li><a href="#">Headliners</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="./about.html">About Cultura</a></li>
-          </ul>
-        </label>
-      </nav>
+        <nav id="navbar">
+            <label id="lbl">
+                <input type="checkbox">
+                <header>
+                    <a id="nav title" href="./index.html"><img src="./img/logo-sane.png">Cultura 19</a>
+                </header>
+                <ul>
+                  <li><a href="./eventsnew.html">Events</a></li>
+                  <li><a href="#">Headliners</a></li>
+                  <li><a href="#">Sponsors</a></li>
+                  <li><a href="#">About Cultura</a></li>
+                </ul>
+            </label>
+        </nav>
         <div id="page1">
 
                     <section txt="c"><grid>
@@ -688,6 +691,8 @@
                background-color:#111;
                color:#666 !important;
                transition: 1s linear;
+               font-family: 'Nova Flat' !important;
+
 
             }
 
@@ -777,6 +782,13 @@
                 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
                 background-color: #559;
             }
+            /* navbar */
+            nav{
+
+              font-family: 'Exo 2', sans-serif !important;
+
+
+            }
 
             #buttonbar{
                 position: fixed;
@@ -848,7 +860,8 @@
             }
 
             h5{
-                font-family: 'Times New Roman', Times, serif;
+              font-family: 'Nova Flat';
+
             }
 
             @media only screen and (max-width: 420px) {
