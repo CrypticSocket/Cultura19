@@ -1,0 +1,565 @@
+<html>
+	<head>
+		    <link rel="stylesheet" type="text/css" media="screen" href="./css/bare.min.css" />
+	</head>
+
+	<body>
+	
+		<style>
+			
+			html{
+			
+			background-color:#222;
+
+			
+			}
+			
+			.topiclist{
+			
+				background:#333;
+				color:#ddd;
+				font-size:1.5em;
+				height:3em;
+				width:100%;
+				text-align:center;
+				margin-bottom:1em;
+				padding-bottom:0.6em;
+				padding-top:0.6em;
+			
+			}
+			
+			#events{
+			
+				width:80%;
+				height:70vh;
+			
+			}
+			
+			#popup{
+				
+				background-color:#111;
+				color:#ddd;
+				font-size:1.8em;
+				text-align:center;
+				height:100%;
+
+			
+			}
+			
+			#popup div{
+				
+				visibility:hidden;
+				position:absolute;
+				
+			}
+			
+			a{width:100% !important}
+		
+		</style>
+		
+		<script>
+			
+			// function show(n){
+			
+			// document.getElementById("topic1").style.visibility = "hidden";
+			// document.getElementById("topic1").style.position = "absolute";
+			
+			// document.getElementById("topic2").style.visibility = "hidden";
+			// document.getElementById("topic2").style.position = "absolute";
+			 
+			// document.getElementById("topic3").style.visibility = "hidden";
+			// document.getElementById("topic3").style.position = "absolute";
+			 
+			// document.getElementById("topic4").style.visibility = "hidden";
+			// document.getElementById("topic4").style.position = "absolute";
+			 
+			// document.getElementById("topic5").style.visibility = "hidden";
+			// document.getElementById("topic5").style.position = "absolute";
+			
+			// document.getElementById("topic"+n).style.visibility = "unset";
+			// document.getElementById("topic"+n).style.position = "unset";
+			
+			// }
+
+			var flag=0;
+            var temp=0;
+            var stopic=0;
+            var prev=0;
+            
+            /*
+            //Drop Top Rain Drop -- Dropdown [ i guess nobody got the bad and boujee reference. :| ]
+                document.getElementById("eventdetailsh").onclick = function() { dropdown("eventdetails"); };
+                document.getElementById("eventrulesh").onclick = function() { dropdown("eventrules"); };
+                document.getElementById("eventadditionalh").onclick = function() { dropdown("eventadditional"); };
+                document.getElementById("eventcontacth").onclick = function() { dropdown("eventcontact"); };
+            //*/
+            
+            function topicin(topic)
+            {
+                temp = flag;
+                if(flag==0)
+                {
+                    document.getElementById("mainpage").setAttribute("class",topic+"bg");
+                }
+            }
+            
+            function topicout()
+            {
+               if(flag==0)
+               {
+                   flag = temp;
+                   document.getElementById("mainpage").setAttribute("class","");
+               }
+            }
+            
+            function topicclick(topic)
+            {
+                
+                if(flag==1)
+                {
+                   document.getElementById(prev).style.backgroundColor = "#222";
+                   document.getElementById(prev+"div").style.display ="none";
+                }
+
+                document.getElementById("mainpage").setAttribute("class",topic+"bg");
+                document.getElementById(topic).style.backgroundColor = "#888";
+                document.getElementById(topic+"div").style.display ="unset";
+                prev = topic;
+                flag=1;
+            }
+            
+            function opclick(x)
+            {
+                document.getElementById("boxpop").style.display = "block";
+                document.getElementById("maincontainer").style.filter = "blur(10px) grayscale(1)";
+                
+               
+                
+
+                var val = x;
+                // alert(val);
+                setoptionnum(x);
+/*
+                ***REFERENCE***
+                document.getElementById("eventname").innerHTML = "Name";
+                document.getElementById("eventtagl").innerHTML = "One line Description";
+                document.getElementById("eventdetails").innerHTML = "";
+                document.getElementById("eventrules").innerHTML = "";
+                document.getElementById("eventadditional").innerHTML = "<strong>Map:</strong> <br><strong>Venue:</strong> <br> Etc";
+                document.getElementById("eventcontact").innerHTML = "Name1 - <a href=\"tel:9739234435\">1234567890</a><br>Name2 - <a href=\"tel:8123297785\"> 9876543210 </a>";
+*/
+
+                var topics = [
+
+                    /*
+
+                        Name
+                        OLD
+                        Big Desc
+                        Rules
+                        Additional : Eg map, venue prize money registration money, number of members per team
+                        EC names and numbers (maybe emails)
+
+                    */
+
+                //Default case
+                
+                    [
+                        "Name",
+                        "One Line Description",
+                        "",
+                        "",
+                        "<strong>Map:</strong> <br><strong>Venue:</strong> <br> Etc",
+                        "Name1 - <a href=\"tel:9739234435\">1234567890</a><br>Name2 - <a href=\"tel:8123297785\"> 9876543210 </a>"
+                    ],
+                    [                        
+                        "PUBG Mobile" , 
+                        "Treat your squad to a Chicken dinner, if you can earn it",
+                        "Land, loot and outwit your opponents to become the last squad left standing in a thrilling game experience full of unexpected, adrenaline-pumping moments.<br>Bring your squad for an epic battle to win a grand prize of ₹8000 <br>Players are dropped into a wide, open area, and they must fight to the death - all while the battlefield shrinks. Use a variety of interesting weapons and vehicles amid the battlegrounds",
+                        "1. You are free to play with squads, duo or solo.<br>2. No cheating (USE OF AIMBOTS, WALL HACKS, SPEEDHACKS, ETC.) All players will be closely monitored and if anyone is caught cheating, that player will be disqualified and banned from the tournament.<br>3. Do not delay in registration, or check-in.<br>4. Team killing is strictly prohibited and if anyone is seen fooling around with teammates using grenades, that player will be disqualified.<br>5.number of matches will depend upon the number of teams registered.<br>**ex : if 50 teams register, then 2 matches will be conducted and the winning teams should play a final game by getting down in a particular place in a map mentioned by the coordinator.",
+                        "<strong>Map:</strong> Vikendi<br><strong>Venue:</strong> Mech AV Hall<br>",
+                        "Arjun K Sharma - <a href=\"tel:9739234435\">9739234435</a><br>Lakshmikanth - <a href=\"tel:8123297785\">8123297785</a>"                        
+                    
+                    ],
+                    [
+                        "FIFA 14",
+                       	"Let Me Give You EAids",
+                    	"Football Gaming Event. One Falls In Love and Then Learns For The Duration",
+                    	"<strong>Rules</strong><br>1.Knockout Based 1 vs 1 Event. Whoever WINS Proceeds To The Next Round<br>2.Partcipant Can Choose Any Team Whether International or Club Football Team.<br><Strong><Language:></strong>English<br><strong><Time Duration:></strong> 5 Minutes for Round Matches<br>6 Minutes for Semi Final and Final Matches<br><strong>Difficulty Level:</strong>LEGENDARY<br><strong>Venue:</strong>CS/IS Lab<br><strong>Version:</strong>14",
+                    	"<strong>REGISTRATION: 100 Rupees </strong><strong>Requirements : </strong>PC Compatible Controller (in case of wireless controllers,batteries should be fully charged and batteries will not be provided).<br><strong>Prize Money:</strong>3000 Rupees for Winner<br>1500 Rupees for Runner-up",
+	                    "<strong>Event Coordinators:</strong>Vikas V - <a href=\"tel:8197885006\">8197885006</a><br>ACHUTH S - <a href=\"tel:9483039676\">9483039676</a>"
+
+                    ],
+                    [
+                        "DOTA ",
+                    	"Come and Show Your Skills In The Ultimate DOTA 2 tourney Held by CMRIT.",
+                    	"DoTA is a 5v5 team based e-sport that focuses on strategy and quick thinking.",
+                    	"<strong>Rules</strong><br><strong>Game used:</strong> DOTA 2 (Tournament)<br><strong>Competition method: </strong>5 versus 5 [Team play, 5 players per team ]<strong>Version:</strong>14<br><strong>League round:</strong>Normal AP mode.<br><strong>Duration of each round :</strong> 20/30 minutes<br>Winner is determined by point system.<br><strong>Victory condition:</strong>The first team to destroy the other team's ancient.<br><strong>Final and semi final:</strong> Captains mode.<br><strong>Duration:</strong> Full game.<br><strong>Victory condition:</strong> The first team to destroy the other team's ancient.",
+                    	"<strong>REGISTRATION: 500 Rupees </strong><strong>Requirements : </strong>Participants can bring their own keyboard, mouse and controllers if needed.<br><strong>Venue:</strong>CAED/PCD Lab.<br><strong>Prize Money:</strong>10000 Rupees for Winner<br>5000 Rupees for Runner-up",
+                      	"<strong>Event Coordinators:</strong>Sahana B. <a href=\"tel:9739999517\">9739999517</a><br>Sabita G. - <a href=\"tel:9901625147\">9901625147</a>"
+
+                    ],
+                    [
+                        " Counter Strike Go ",
+	                    "Do you have what it takes to win the most played multiplayer shooting game of all time?",
+	                    "It is a multiplayer first person shooter game. The game pits two teams against each other: the Terrorists and the Counter-Terrorists. Both sides are tasked with eliminating the other while also completing separate objectives, the Terrorists, depending on the game mode, must either plant the bomb or defend the hostages, while the Counter-Terrorists must either prevent the bomb from being planted, defuse the bomb, or rescue the hostages.",
+                    	"<strong>Rules</strong><br>1. Rules are subject to change<br>2. A game consists of 2 periods, each period including 8 rounds. A round lasts 3:00 minutes. One period as terrorists and the other as counter-terrorists for each team.<br>3.  In the incident of a tie, there will be a tie breaker match<br>4. In the tournament, maps are to be chosen by dropping unwanted maps.<br>5.  A knife-round is used to decide which team plays Counter-Terrorist and which team plays Terrorist. The winner of the knife-round picks their role before the first half of the match. Roles switch in the second half of the match. <br>6. If a team is not present on the tournament server at the start of the scheduled time, the other team chooses map and the side (CT or T). <br>7. Team members may not communicate (speak) when he or she is 'dead' in the game. The only exception is when all team members are eliminated in the game. <br>8. Only the team captains are allowed to send public messages (message mode1 or 'y') during the game. The rest of the players are not allowed to use message mode1; failure to meet this rule would lead to team penalties. The players can send only team messages (message mode2 or 'u') during the match.<br><strong>The below items are considered as cheating: </strong>1. Using cheat software<br>2. Intentional disconnection<br>3. Using any settings other than standard and permitted<br>4. Using game map bugs ",
+	                    "<strong>REGISTRATION: 500 Rupees </strong><strong>Requirements : </strong>Participants can bring their own keyboard, mouse and controllers if needed.<br><strong>Venue:</strong>CAED/PCD LAB<br><strong>Prize Money:</strong>10000 Rupees for Winner<br>5000 Rupees for Runner-up",
+	                    "<strong>Event Coordinators:</strong>Zeeshan Islam <a href=\"tel:9830450347 \">9830450347 </a><br>Rahul Tiwari - <a href=\"tel:7704053327 \">7704053327 </a>"   
+
+                    ],
+                    [
+                        "Call Of Duty 4 : Modern Warfare ",
+	                    "A single player Death-Match.",
+                    	"It features a death-match based(free-for-all) PvP mode on various maps. The goal of a death-match game is to take out as many other players as possible until a certain condition or limit is reached, commonly being a time limit.Once the condition is met, the match is over, and the winner is the player that has accumulated the greatest number of points.",
+                      	"<strong>Rules</strong><br><strong>Names:</strong>1. Players must use an acceptable name during the Competition. Using alternative spellings to avoid compliance with the following rules is strictly prohibited.<br>2. Player Name should not include a sponsor name,not include any product name or description, not include any words that are purely commercial and not include profanity.<strong>CODE OF CONDUCT:: </strong>Participants must at all times observe the highest standards of personal integrity and good sportsmanship. Participants required to behave in professional and sportsmanlike manner in their interactions with the administration, attendees and other participants.<strong> CHEATING:</strong>Match-fixing, or any other action to intentionally alter, or attempt to alter the results of any Game or Match.<br>Attempts to interfere with another players connection to game service by any means.<br>Intentional exploiting an in-game glitch to gain an advantage.<br>Attempting to view spectator monitors or attendee monitors.<><strong>GAME RULES:</strong>Time Limit: 20 minutes<br>Score Limit: unlimited<br>Qualifying rounds : 3<br>Final rounds : 1<br><strong>GENERAL SETTINGS:</strong>  Pre-Match Timer: 10 Seconds<br>Spectating: disabled.<br>Killcam: disabled<br>Mini-Map: Normal<br>Battle Chatter: Disabled<br><strong>SPAWN SETTINGS::</strong>Respawn Delay: 5 seconds.<br>Force Respawn: disabled<br><strong>HEALTH AND DAMAGE:</strong> Hardcore Mode: enabled<br>Health: Normal<br>Health Regeneration: Normal<br>Number of Lives: Unlimited<br><strong>WEAPONS:</strong> Weapons: All weapons allowed<br>Attachments: Grenade launcher not allowed<br>Perks not allowed:  Juggernaut, Last stand, Martyrdom",
+                    	"<strong>REGISTRATION: 100 Rupees </strong><strong>Requirements : </strong> PLAYERS CAN BRING THEIR OWN KEYBOARD, MOUSE AND HEADPHONES (HEADPHONES WILL NOT BE PROVIDED).<br><strong>Venue:</strong>CAED/PCD Lab.<br><strong>Prize Money:</strong>7000 Rupees for Winner<br>3000 Rupees for Runner-up",
+                    	"<strong>Event Coordinators:</strong> Vishal Kundar <a href=\"tel:9886166470 \">9886166470 </a><br>Vedant Barbhaya - <a href=\"tel:8980599623 \">8980599623 </a>"
+                    ],
+                    [
+                        " NFS Most Wanted ",
+                    	" Race past your opponents, and oust the police to be the Most-Wanted Racer in Town.",
+                    	"Need for Speed: Most Wanted is set in an open world environment. The game takes on the gameplay style of the first Most Wanted title in the Need for Speed franchise. Most Wanted allows players to select one car and compete against other racers in three types of events: Sprint races, which involves traveling from one point of the city to another, Circuit races, each having two or three laps total and Speed runs, which involve traversing through a course in the highest average speed possible.",
+                    	"<strong>Rules</strong><br>1. Game: - Need for speed Most Wanted<br>2. The game can be played on Keyboard as well as controllers. (Controllers are allowed. The default settings for the keyboard controls will be applied, but it can be changed before the start of the competition, after intimating the volunteers about the same.)<strong>3. Tournament Rules: -</strong><br>A particular number of players will form a set. These players will compete with the members of each set. The emerging winner of each set, will then move to the next round.<br> The race type will be disclosed to you on spot. (Circuit/Sprint/Speed Run).<br> At the end of each match, the players must retain the confirmation screen, and show it to the referee. <br><strong>4.Car settings: -</strong>  All cars will be unlocked.<br>A specified time (to be disclosed on spot) will be given for the participants to free roam and select the car of their choice.<br> Only the DEFAULT settings of the car will be applicable. Any modifications whatsoever, will lead to disqualification.<br> Junkman is NOT allowed.<br>Personal save profile is strictly prohibited.<br>5. The race mode will be intimated on the spot. <br>6. All other settings related to the UI is left to the participants discretion, and can be changed for simulating personal experiences.Only keyboards shall be provided. Participants can get their own set of controllers if want.",
+                    	"<strong>REGISTRATION: 100 Rupees </strong><strong>Requirements : </strong>Participants can bring their own keyboard, mouse and controllers if needed.<br><strong>Venue:</strong>CAED/PCD LAB<br><strong>Prize Money:</strong>3000 Rupees for Winner<br>1500 Rupees for Runner-up",
+                    	"<strong>Event Coordinators:</strong>Yash Mathur <a href=\"tel:9051078018  \">9051078018  </a><br>Dipnarayan Roy - <a href=\"tel:9166079608  \">9166079608  </a>"
+
+                    ],
+					[
+						"Art Hunt",
+						"Be the first to hunt down the clues from the forbidden forest (campus).",
+						"This is an event that empowers you to discover clues hidden in the mystical and magical place of cmrit. Unravel the mystery by solving the clues and be the first to showcase your talents to the world. Bring out the your art like a spell.",
+						"<strong>Rules</strong><br>1.Duration of 1.5hours.<br>2.No use of internet.<br>3. Only sheets will be provided.<br>4. Coloring materials should be brought by the participants itself.<br>5. The results declared by the judges will be final.",
+						"<strong>REGISTRATION: 100 Rupees </strong><strong>Prize Money:</strong>3000 Rupees for Winner<br>1500 Rupees for Runner-up",
+						"<strong>Event Coordinators:</strong> Vidhi Srivastava - <a href=\"tel:7899237736 \">7899237736 </a><br>Shamema - <a href=\"tel:9066585499\">9066585499</a>"
+
+					],
+					[
+						"Cartooning:A Magical Pencil",
+						"Animate and unveil the beauty of the magical world.",
+						"A topic will be provided to the drawer, analyse the topic given, animate the scene on the sheet. The person with the most creative cartoonistic skills will be rewarded.",
+						"<strong>Rules</strong><br>1.Solo Event<br>2.Papers and markers will be provided.<br>3. Topic will be given on the spot<br>4. Participants have to carry their own materials<br>5. Time – 1.5 hour",
+						"<strong>REGISTRATION: 100 Rupees </strong><strong>Prize Money:</strong>2000 Rupees for Winner<br>1000 Rupees for Runner-up",
+						"<strong>Event Coordinators:</strong> Ankith P M - <a href=\"tel:9886746924 \">9886746924 </a><br> Harshitha H - <a href=\"tel:9148753523\">9148753523</a>"
+
+					],
+					[
+						"Face Painting:CARA MAGICA",
+						"Painting a canvas is mainstream ,lets paint faces now!",
+						"Face painting is the art of applying  colourful cosmetic paints onto a person's face. showcase your talent by painting your partner's face with respect to the given themes.",
+						"<strong>Rules</strong><br>1.It is an event for 2 participants in a team.<br>2.Participants must bring their own materials.<br>3.Duration of the event will be 90 minutes. <br>4.The theme will be given on spot. <br>5.The judge’s decision is final. ",
+						"<strong>REGISTRATION: 200 Rupees </strong><strong>Prize Money:</strong>2000 Rupees for Winner<br>1000 Rupees for Runner-up",
+						"<strong>Event Coordinators:</strong> ARJUN.S - <a href=\"tel:8073653480 \">8073653480 </a><br>Darshan hari- <a href=\"tel:9110449726\">9110449726</a>"
+					],
+					[
+						" Pictionary",
+						"Cast a spell by picturing the magical word",
+						"The team chooses one person to begin drawing. They take turns for each word. Drawer chooses card out of a deck and tries to draw that suggest the word. The other teammate tries to guess.Team which finds more words will be in the lead",
+						"<strong>Rules</strong><br>1.It is an event for 2 participants in a team.<br>2.The pictures cannot contain any numbers, letters or verbal clues.<br>3. Drawer shouldn't speak out the word or clues.<br>4. 60 sec is given to guess for each word<br>5. Any team crossing the rules will be disqualified.<br>There are 3 rounds in total .Top 5 teams are passed to second round.Then Top 3 to the third round.",
+						"<strong>REGISTRATION: 200 Rupees </strong><strong>Prize Money:</strong>3000 Rupees for Winner<br>1500 Rupees for Runner-up",
+						"<strong>Event Coordinators:</strong> Ramesh D- <a href=\"tel:9738713574 \">9738713574 </a><br>Meghana R - <a href=\"tel:9731630655\">9731630655</a>"
+					],
+					[
+						"Poster making",
+						"Shape your art with magic and bring forth a change in the world!",
+						"This event is going to bring out the best creation that one can possess. The feeling of wonder will woo you as the theme would be magic. Different people can have different angles of vision looking at the amazing posters made by you. So guys make it worth. Presenting you the exciting and fun event where in one can find both enthusiasm and creation.",
+						"<strong>Rules</strong><br>1.Duration of 1.5hours.<br>2.No use of internet.<br>3. Only sheets will be provided.<br>4. Coloring materials should be brought by the participants itself.<br>5. The results declared by the judges will be final.",
+						"<strong>REGISTRATION: 200 Rupees </strong><strong>Prize Money:</strong>2000 Rupees for Winner<br>1000 Rupees for Runner-up",
+						"<strong>Event Coordinators:</strong> Amrutha A - <a href=\"tel:9743165873 \">9743165873 </a><br>Bh G Hanumohan - <a href=\"tel:8861336177\">8861336177</a>"
+					],
+					[
+						"Silent Seekers(Mime)",
+                        "Silently amaze the crowd",
+                        "",
+                        "1. No of members in a team - 7+2 <br>2. Time limit - 8+2 <br>3. No dialogues allowed in the music",
+                        "<strong>Venue:</strong> dhwani <br><strong>No. of judges</strong>2 <br>",
+                        "Pillai Vignesh Sureshkumar - <a href=\"tel:9513069231\">9513069231</a><br>Ritish Verma - <a href=\"tel:9697115352\"> 9697115352 </a>"
+					],
+					[
+						"Mad Ads",
+                        "One Line DeBring out the madness in drama!",
+                        "Parody of advertisement- like the name suggests is a way of ridiculing or drawing negative attention towards a real advertisement or such an advertisement's subject, or as a comedic device, such as in a comedy skit or sketch. It's all about fun, it's about laughing and having a good time.",
+                        "Group of 8+2 members <br> Duration: 10+2 minutes <br> Registration fee: Rs.500 <br> Winner :Rs.7000 <br> Runner Up:Rs.4000",
+                        "<strong>Venue:</strong><br> Cultura Mainstage <br><strong>Judges:</strong><br> 2 ",
+                        "Peeyush Mishra - <a href=\"tel:9632237789\">9632237789</a><br>Sahil Thakur - <a href=\"tel:7483121336\"> 7483121336 </a>"
+					],
+					[
+						"Hallabol",
+                        "Hit the streets and act out loud",
+                        "Looking for a place to make people believe in your magical wand of words, to tell them you     can change the world with your bewitched and powerful personalities and words. Here is a perfect opportunity to voice it out!!!",
+                        "Team size minimum 10 maximum 12 including all music accompanist<br>*The essence of the play should be brought in English Hindi or Kannada.<br>*Pre recorded music and speakers are not allowed *No usage of foul language.",
+                        "<strong>No. of participants:</strong><br>8 + 1<br>",
+                        "S.K. YUKTA SWAMY - <a href=\"tel:8970688964\">8970688964</a><br>VIPUL KUMAR SINHA - <a href=\"tel: 8073718124\">  8073718124 </a>"
+					],
+					[
+						"The Blind Line (Improv)",
+                        "Make a scene on spot!",
+                        "The participants will be given a topic on the spot he /she will have to pull out an act accordingly .The judgement will be based on spontaneity , sense of humor on the stage and stage presence .",
+                        "Group of 4 in a team ",
+                        "<strong>Prizes:</strong><br> First prize : 2000<br>Second prize : 1000 <br> Registration fee: 300 <br><strong>Venue:</strong>mech AV HALL <br>",
+                        "Shirish Lal - <a href=\"tel:9546503541\">9546503541</a><br> Abhyudaya Rai - <a href=\"tel:9113164590\"> 9113164590 </a>"
+					],
+					[
+                        "Mock Rock",
+                        "Love to rock or love to mock!",
+                        "Mock Rock is an awesome  competition, where students compete in groups on a stage for the title of best Mock Rock of 2019.  Groups will put together a song(s) for their act and will be scored in the areas of Costumes, Creativity, Humor, Originality, and Overall Performance. so make sure you come and join us !!!",
+                        " GROUP EVENT<br>6-8 MEMBERS IN A TEAM<br>5+1MINS<br>THEME: MAGIC*<br>*IF THEME IS USED BONUS POINTS ARE AWARDED<br>USE OF PROPS IS ALLOWED<br>OBSCENITY OF ANY  SORT WILL LEAD TO DISQUALIFICATION",
+                        "<strong>Prizes:</strong><br> First prize : RS.7000/-<br>Second prize : RS.4000/-<br><strong>Venue:</strong> <br>",
+                        "R.Shravan Sundar - <a href=\"tel:9620736801\">9620736801</a><br>C.Raghavendran - <a href=\"tel:9035201403\"> 9035201403 </a>"
+                    ],
+					
+
+						
+                ]
+
+                
+                    document.getElementById("eventname").innerHTML = topics[stopic][0];
+                    document.getElementById("eventtagl").innerHTML = topics[stopic][1];
+                    document.getElementById("eventdetails").innerHTML = topics[stopic][2];
+                    document.getElementById("eventrules").innerHTML = topics[stopic][3];
+                    document.getElementById("eventadditional").innerHTML = topics[stopic][4];
+                    document.getElementById("eventcontact").innerHTML = topics[stopic][5];   
+                
+            }
+            
+            function closebox()
+            {
+                document.getElementById("boxpop").style.display = "none";
+                document.getElementById("maincontainer").style.filter = "";
+                stopic = 0;
+            }
+
+            function setoptionnum(x)
+            {
+                switch(x)
+                {
+					//games
+
+                    case "pubg":
+                        
+                        stopic = 1;
+                        break;
+                    
+                    case "fifa":
+
+                        stopic = 2;
+                        break;
+
+                    case "dota":
+                        stopic = 3;
+                        break;
+
+                    case "csgo":
+                        stopic = 4;
+                        break;
+
+                    case "cod":
+                        stopic = 5;
+                        break;
+
+                    case "nfs":
+                        stopic = 6;
+                        break;
+
+					//art 	
+
+					case "arthunt":
+						stopic = 7;
+						break;
+
+					case "cartooning":
+                        
+                        stopic = 8;
+                        break;
+                    
+                    case "facepainting":
+
+                        stopic = 9;
+                        break;
+
+                    case "pictionary":
+                        stopic = 10;
+                        break;
+
+                    case "postermaking":
+                        stopic = 11;
+                        break;
+
+					//theatre						
+
+                    case "mime":
+						stopic = 12;
+						break;
+
+					case "madads":
+
+                        stopic = 13;
+                        break;
+
+                    case "hallabol":
+                        stopic = 14;
+                        break;
+
+                    case "blindline":
+                        stopic = 15;
+                        break;
+
+                    case "mockrock":
+						stopic = 16;
+						break;
+
+                    default: 
+                        stopic = 0;
+                        break;              
+                }
+
+            }
+
+            /*
+            function drophide()
+            {
+                
+                    document.getElementById("eventdetails").style.display="none";
+                    document.getElementById("eventrules").style.display="none";
+                    document.getElementById("eventadditional").style.display="none";
+                    document.getElementById("eventcontact").style.display="none";
+                
+            }
+            
+            function dropdown(x)
+            {
+            
+                drophide();
+                document.getElementById(x).style.display="block";
+            
+            }
+            //*/
+			
+			
+		</script>
+		
+		<div id="events">
+			
+			<grid>
+				
+				<div fx col="1/3">
+
+				
+
+					<div class="topiclist" class="gaming">
+						Gaming
+					</div>
+					
+					<div class="topiclist" class="art">
+						Art
+					</div>
+					
+					<div class="topiclist" class="theatre">
+						Theatre
+					</div>
+					
+					<div class="topiclist" class="photography">
+						Photography
+					</div>
+					
+					<div class="topiclist" class="kannada">
+						Kannada
+					</div>
+					
+					<div class="topiclist" class="music">
+						Music
+					</div>
+					
+					<div class="topiclist" class="dance">
+						Dance
+					</div>
+					
+					<div class="topiclist" class="literary">
+						Literary
+					</div>
+					
+					<div class="topiclist" class="technical">
+						Technical
+					</div>
+					
+					<div class="topiclist" class="informal">
+						Informal
+					</div>
+				</div>
+				
+				<div fx col="2/3" >
+					
+					<div id="popup">
+						
+						<div id="topic1">
+							<div id="gamesdiv" class="topicdiv">
+								<grid>
+									<div col = "1/4">
+										<button class="but2" id="pubg" value="pubg" onclick="opclick(this.id)">PUBG Mobile</button>
+									</div>
+									
+									<div col = "1/4">
+										<button class="but2" id="fifa" value="fifa" onclick="opclick(this.id)">Fifa 14</button>
+									</div>
+									
+									<div col = "1/4">
+										<button class="but2" id="dota" value="dota" onclick="opclick(this.id)">Dota</button>
+									</div>
+									
+									<div col = "1/4">
+										<button class="but2" id="csgo" value="csgo" onclick="opclick(this.id)">CS:GO</button>
+									</div>
+									
+									<div col = "1/4">
+										<button class="but2" id="cod" value="cod" onclick="opclick(this.id)">Call Of Duty</button>
+									</div>
+									
+									<div col = "1/4">
+										<button class="but2" id="nfs" value="nfs" onclick="opclick(this.id)">NFS Most Wanted</button>
+									</div>
+								</grid>
+							</div>
+						</div>
+						
+						<div class="theatre" class="events">
+							Theatre
+						</div>
+						
+						<div class="photography" class="events">
+							Photography
+						</div>
+						
+						<div class="kannada" class="events">
+							Kannada
+						</div>
+						
+						<div class="music" class="events">
+							Music
+						</div>
+						
+						<div class="dance" class="events">
+							Dance
+						</div>
+						
+						<div class="literary" class="events">
+							Literary
+						</div>
+						
+						<div class="technical" class="events">
+							Technical
+						</div>
+						
+						<div class="informal" class="events">
+							Informal
+						</div>
+					</div>
+					
+				</div>	
+				
+			
+			</grid>
+			
+		</section>
+	
+	</body>
+</body>

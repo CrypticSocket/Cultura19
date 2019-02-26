@@ -1,0 +1,223 @@
+* {cursor: url(http://cur.cursors-4u.net/user/use-1/use160.cur), auto !important;}
+
+body{
+  background-color: black;
+  margin: 0;
+  font-family: 'Satisfy', cursive;
+  width:100vw;
+  /* BG pic stuff */
+  /* background-image: url("../img/intro.jpg");
+  background-color: #222;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  position: relative;
+}
+
+header a:hover{
+  color: #4AA;
+  border-color: #4AA;
+  border-bottom: 2px solid;
+}
+
+#bgimg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99vw;
+  background-image: url("../img/intro.jpg");
+  background-color: #FFF;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+#container_main h1{
+    color:#fff;
+    text-transform: uppercase;
+    /* font-size: 10rem; */
+    margin: 0px;
+    margin-bottom: 1%;
+    transition: all 2s linear;
+}
+
+#container_main h5{
+    color: #bbb;
+    /* font-size: 5rem; */
+    margin: 0px;
+
+}
+
+label{
+    max-width: 100vw !important;
+}
+
+/* nav{
+    position: absolute;
+    width: 98vw;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    background: black;
+    border-radius: 10px;
+}
+
+nav a:hover{
+    color:#0AF;
+} */
+
+
+/* background pics do it*/
+/*??? done already. xD*/
+
+
+/* #intropic{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+#intropic_m{
+    display: none;
+} */
+
+#r{
+    color: red;
+}
+
+#b{
+    color: #0AF;
+}
+
+
+nav{
+  padding:0;
+  font-family: 'PT Mono', monospace;
+  color:#aaa !important;
+  border:none !important;
+  /* background-color: #222 !important; */
+}
+
+#container_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    width:100%;
+}
+
+#container_main h1{
+  /* font-size: 6em; */
+  /* background-color: rgba(0,0,0,0.5); */
+  /* padding: 0rem 4rem 0rem 4rem; */
+  border-radius: 5px;
+}
+
+#container_main h5{
+  /* font-size: 2.5em; */
+  font-family: 'PT Mono', monospace;
+  /* background-color: rgba(0,0,0,0.5); */
+  /* padding: 0rem 2rem 0rem 2rem; */
+  border-radius: 5px;
+}
+
+@font-face {
+    font-family: "myFirstFont";
+    src: url("../fonts/digital-7\ \(italic\).ttf");
+}
+
+#demo{
+
+  /* font-size: 5em; */
+  color: #999;
+  font-family: "myFirstFont";
+  background-color: rgba(0,0,0,0.5);
+  padding: 0rem 4rem 0rem 4rem;
+  margin-bottom: 0;
+  border-radius: 5px;
+}
+
+.timer-labels{
+
+  font-size:1em !important;
+
+}
+
+#demo2{
+
+    /* font-size: 5em; */
+    color: #666;
+    font-family: "myFirstFont";
+    margin-top: 0;
+    padding: 0;
+  }
+
+/* NAVBAR FIX */
+#navbar{
+  background: rgba(0,0,0,0.7) !important;
+  color: #DDD;
+  padding: 0px;
+  border-bottom: 1px solid #080808;
+  font-family: 'PT Mono', monospace;
+}
+
+#navbar ul li a:hover{
+  color: #4AA;
+  border-color: #4AA;
+}
+
+#lbl{
+  max-width: 100vw;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+html {overflow: hidden;}
+
+@media (max-width: 50rem)
+{
+  ::-webkit-scrollbar{
+    width: 0px;
+  }
+
+  #navbar label ul li{
+      border: 0px;
+  }
+
+  #navbar label ul{
+      background: rgb(0,0,0,0.7);
+      border-top: 1px solid #080808;
+  }
+}
+
+/* ANIMATION STARTS HERE */
+
+.circle{
+    width: 5px;
+    height: 5px;
+    border-radius: 100px;
+    border: 2px solid white;
+    background: white;
+    position: absolute;
+}
