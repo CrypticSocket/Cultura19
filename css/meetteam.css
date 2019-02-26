@@ -73,3 +73,9 @@ body, html{
 ::-webkit-scrollbar{
     width: 0px;
 }
+
+ul{
+
+  background: #111 !important;
+
+}
