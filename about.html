@@ -37,7 +37,7 @@
                 <h2>About Cultura</h2>
 
                 <p>
-                    Cultura - The annual inter-collegiate-techno-cultural fest of CMRIT stands out for the past 11 years in showcasing it's skills, talents and charisma.<br>
+                    The annual inter-collegiate-techno-cultural fest of CMRIT stands out for the past 11 years in showcasing it's skills, talents and charisma.<br>
                     The two days of Cultura are more than just a festival, it is an experience beyond words. From our high-spirited pro nights to our action packed events, Cultura has it all !!<br>
                     Cultura caters to every talent and has reached a milestone in celebrating a wide variety of interests.<br>
                     Come break the illusion !
@@ -61,7 +61,7 @@
 
                 <div>
                     <a href="https://goo.gl/maps/Ykx3A4qQHEq">
-                    <img height="200" width="200" src="./img/map.png">
+                    <img height="200" width="200" src="./img/map.png" class="circleit">
                     </a>
                 </div>
 
@@ -88,29 +88,27 @@
         <style>
             /* For Main Body */
             body, html{
-
                 height:100vh;
                 width:100vw !important;
                 background-color: #222;
-
             }
 
             #main{
-
-                padding:0 ;
+                padding: 0;
+                padding-top:10px ;
 
             }
 
             #cmr, #cultura{
-
+                font-family: cursive;
                 background-color: #111;
                 min-width:80%;
                 border-bottom:2px  ;
                 color:#ccc !important;
                 margin-bottom:2em;
                 text-align: center;
-                box-shadow: 0px 0px 160px #600;
-                font-size:1em;
+                box-shadow: 0px 0px 160px #AAA;
+                font-size:1em; 
             }
 
             /* Main Body End */
@@ -131,13 +129,35 @@
             .footerimg{
                 width: 5rem;
                 height: 5rem;
+                transition-duration: 1s;
+            }
+
+            .circleit{
+                transition-duration: 1s;
+            }
+
+            .circleit:hover{
+                border-radius: 100%;
+            }
+
+            .footerimg:hover{
+                border-radius: 100%;
             }
             /* Footer End */
 
             ul{
-
               background: #111 !important;
+            }
 
+            html{
+                overflow-x:hidden;
+            }
+
+            @media (max-width: 420px)
+            {
+                #cmr, #cultura{
+                box-shadow: none;
+            }              
             }
 
         </style>
