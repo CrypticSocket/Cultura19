@@ -43,19 +43,56 @@
           <!-- <img src="./img/headliner.png"> -->
           <!-- put headliner poster/bg as headliner.png -->
 
-
+          <section id="secondary">
           <card>
-	           <h5>Title</h5>
-
-	            <!-- <img src="/pics.jpg" alt="sign"> -->
+	           <!--
+             <h5>Title</h5>
+             IF YOU NEED A TITLE USE THIS. IF POSSIBLE ASK THE DESIGN TEAM TO
+             INCORPORATE IT A PART OF THE POSTER
+             [IF IT DOESN'T ALREADY EXIST LIKE THAT]
+           -->
+              <!-- insert poster pic below -->
               <img src = "./pics/CHANDRAMA(OC).jpg">
 	             <button id="buybutton">BUY TICKETS</buttons>
                </card>
 
-
+             </section>
         </section>
     </div>
     <style>
+
+    body{
+
+      height:100%;
+      background-color: #EB1;
+    }
+
+    html{
+
+      height:100%;
+
+    }
+
+    #container_main{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      /*width:100%!important;
+      margin: unset !important;
+      padding: unset !important;*/
+
+    }
+
+    #secondary{
+
+      max-width: 60vh;
+      /*margin: unset !important;
+      padding: unset !important;*/
+
+    }
+
     ul{
 
       background: #111 !important;
@@ -64,14 +101,22 @@
 
     #buybutton{
 
-      background-color:#5f0 !important;
+      background-color:#0c0c0c !important;
       border:unset !important;
-      border-right:4px solid #5f0;
+      border-left:4px solid #5f0 !important;
       border-radius:0px !important;
       width:100% !important;
       height: 100% !important;
-      margin-bottom: 0em !important;
+      margin: 0em !important;
+      color:#5f0 !important;
+      transition: 0.75s linear;
 
+  }
+
+  #buybutton:hover{
+
+    background-color: #5f0 !important;
+    color:#000 !important;
 
   }
 
@@ -83,14 +128,17 @@
     align-items:stretch;
     justify-content: center;
     flex-direction: column;
+    align-content: center;
+    border:unset !important;
 
   }
 
   card img{
 
       min-height: 40% !important;
-      max-width:20vw !important;
       margin:0em !important;
+      width:100% !important;
+      border: unset !important;
 
 
   }
