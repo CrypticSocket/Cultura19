@@ -39,6 +39,7 @@
     		</ul>
     	</label>
     </nav>
+
         <section id="container_main">
           <!-- <img src="./img/headliner.png"> -->
           <!-- put headliner poster/bg as headliner.png -->
@@ -64,12 +65,13 @@
     body{
 
       height:100%;
-      background-color: #EB1;
+      background-color: #111;
     }
 
     html{
 
       height:100%;
+      overflow: hidden !important;
 
     }
 
@@ -78,7 +80,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 1em !important;
+      padding-top: 0em !important;
+      max-width:60vh;
 
       /*width:100%!important;
       margin: unset !important;
@@ -88,6 +91,7 @@
 
     #secondary{
 
+      /*
       max-width: 60vh;
       /*margin: unset !important;
       padding: unset !important;*/
@@ -154,7 +158,7 @@
     /*
     background-image: url("http://thepowerofvoices.com/wp-content/uploads/2016/03/mes-de-dezembro-na-capital-contara-com-grandes-shows-no-sertanejo.jpg");
     */
-    background-image: url("./img/poster.jpg")
+    background-image: url("./img/headlinerbg.jpg");
     background-color: #111;
     height: 100vh;
     background-position: center;
