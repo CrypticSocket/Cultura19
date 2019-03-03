@@ -42,7 +42,7 @@ preload(
     "./img/literature.gif",
     "./img/technical.gif",
     "./img/informal.gif",
-    "./img/poster.png"
+    "./img/poster2.png"
   )
 
 //------------------
