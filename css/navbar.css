@@ -14,3 +14,7 @@
 #lbl{
     max-width: 100vw;
 }
+
+nav:not([class]) header:after, nav[xx] header:after{
+    filter: invert(100%);
+}
