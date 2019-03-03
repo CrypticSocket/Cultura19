@@ -429,6 +429,9 @@
         adaptiveHeight: true,
         autoplaySpeed: 1000,
     });
+    $('.slide').on('touchstart', e => {
+        $('.slide').slick('slickPlay');
+    });
 </script>
     </body>
 </html>
