@@ -6,17 +6,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--     bare  css     -->
-    <link rel="stylesheet" type="text/css" media="screen" href="https://crypticsocket.github.io/Cultura19/css/bare.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/bare.min.css" />
     <!-- custom stylesheet -->
-    <link rel="stylesheet" type="text/css" media="screen" href="https://crypticsocket.github.io/Cultura19/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
     <!--   font size fix   -->
-    <link rel="stylesheet" type="text/css" media="screen" href="https://crypticsocket.github.io/Cultura19/css/fontfix.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/fontfix.css" />
     <!--   Navbar CSS -->
-    <link rel="stylesheet" type="text/css" media="screen" href="https://crypticsocket.github.io/Cultura19/css/navbar.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/navbar.css" />
     <!--        font       -->
     <link href="https://fonts.googleapis.com/css?family=PT+Mono|Satisfy" rel="stylesheet">
     <!--      favicon      -->
-    <link rel="icon" href="https://crypticsocket.github.io/Cultura19/img/favicon.png">
+    <link rel="icon" href="./img/favicon.png">
 
   </head>
 
@@ -28,7 +28,7 @@
     	<label id="lbl">
     		<input type="checkbox">
     		<header>
-    			<a id="nav title" href="https://crypticsocket.github.io/Cultura19/index.html"><img src="https://crypticsocket.github.io/Cultura19/img/logo-sane.png">Cultura 19</a>
+    			<a id="nav title" href="./index.html"><img src="./img/logo-sane.png">Cultura 19</a>
     		</header>
         <ul>
           <li><a href="./eventsnew.html">Events</a></li>
@@ -41,7 +41,7 @@
     </nav>
         <section id="container_main">
           <!-- <img> for when they give it -->
-          <img src="https://crypticsocket.github.io/Cultura19/img/culturalogo.png">
+          <img src="./img/culturalogo.png">
           <!-- and then we'll have to edit to make it look decent. smh -->
           <!-- <h1 class="sparkley"> <span id="r">Cultura</span> <span id="b">19!</span></h1> -->
           <div class="middle">
