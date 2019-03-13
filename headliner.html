@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--     bare  css     -->
     <link rel="stylesheet" type="text/css" media="screen" href="./css/bare.min.css" />
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./slick/slick-theme.css">
     <!-- custom stylesheet
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
        font size fix   -->
@@ -41,25 +43,42 @@
     </nav>
 
         <section id="container_main" style="height:100%;justify-content:center;">
-          <!-- <img src="./img/headliner.png"> -->
+          <img src="./img/headliner.png"> -->
           <!-- put headliner poster/bg as headliner.png -->
-          <!--
-          <section id="secondary">
-          <card>
+            <section id="secondary">
+              <div class="slide">
+                <div>
+                    <card>
+                        <h5>Title</h5>
+                          <img src = "./img/poster2.png">
+                          <a href="https://www.instamojo.com/CULTURA/mariana-bo-early-bird-passes/" target="_blank"><button id="buybutton">BUY TICKETS</buttons></a>
+                      </card>
+                </div>
+                  <div>
+                      <card>
+                          <h5>Title</h5>
+                            <img src = "./pics/DIP(WEB TEAM).jpg">
+                            <a href="https://www.instamojo.com/CULTURA/mariana-bo-early-bird-passes/" target="_blank"><button id="buybutton">BUY TICKETS</buttons></a>
+                        </card>
+                  </div>
+                  <div>
+                      <card>
+                          <h5>Title</h5>
+                            <img src = "./pics/GAUTHAM(WEB TEAM).jpg">
+                            <a href="https://www.instamojo.com/CULTURA/mariana-bo-early-bird-passes/" target="_blank"><button id="buybutton">BUY TICKETS</buttons></a>
+                        </card>
+                  </div>
+              </div>
+            
 
-             <h5>Title</h5>
-
-
-              <img src = "./img/poster2.png">
-              <a href="https://www.instamojo.com/CULTURA/mariana-bo-early-bird-passes/" target="_blank"><button id="buybutton">BUY TICKETS</buttons></a>
-
-          </card>
-
-        </section>
-      -->
-          <h2 style="color:#888;background-color:#222;padding:2em;font-family:courier;">Coming Soon !</h2>
+          </section>
+     
         </section>
     </div>
+
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+
     <style>
 
     body{
@@ -175,5 +194,18 @@
   }
     </style>
     <script rel="stylesheet" type="text/javascript" src="./js/main.js"></script>
+    <script>
+      $('.slide').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        autoplay: true,
+        cssEase: 'linear'
+      });
+      $('.slide').on('touchstart', e => {
+          $('.slide').slick('slickPlay');
+      });
+  </script>
   </body>
 </html>
