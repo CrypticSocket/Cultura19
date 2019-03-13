@@ -45,20 +45,19 @@
         <section id="container_main" style="height:100%;justify-content:center;">
           <img src="./img/headliner.png"> -->
           <!-- put headliner poster/bg as headliner.png -->
-          <!--
             <section id="secondary">
               <div class="slide">
                 <div>
                     <card>
                         <h5>Title</h5>
-                          <img src = "./img/poster2.png">
+                          <img src = "./img/headliner1.jpeg">
                           <a href="https://www.instamojo.com/CULTURA/mariana-bo-early-bird-passes/" target="_blank"><button id="buybutton">BUY TICKETS</buttons></a>
                       </card>
                 </div>
                   <div>
                       <card>
                           <h5>Title</h5>
-                            <img src = "./pics/DIP(WEB TEAM).jpg">
+                            <img src = "./img/headliner2.png">
                             <a href="https://www.instamojo.com/CULTURA/mariana-bo-early-bird-passes/" target="_blank"><button id="buybutton">BUY TICKETS</buttons></a>
                         </card>
                   </div>
@@ -73,7 +72,6 @@
             
 
           </section>
-          -->
      
         </section>
     </div>
