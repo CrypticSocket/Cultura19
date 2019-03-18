@@ -266,7 +266,7 @@
               </div>
 
               <div col = "1/3">
-                <a target="_blank" id="madads" value="madads" onclick="opclick(this.id)">
+                <a target="_blank" id="madadas" value="madads" onclick="opclick(this.id)">
                   <card class="topic-cards">
                     <h5>MAD ADS</h5>
                     <img src="club logos/MadAds.png">
@@ -1028,6 +1028,7 @@
                     case "mime":
 						            stopic = 12;
                         reglink = "https://www.instamojo.com/CULTURA/silent-seekersmime/";
+						            break;
 
 					          case "madads":
                         stopic = 13;
