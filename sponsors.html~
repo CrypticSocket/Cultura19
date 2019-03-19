@@ -160,13 +160,6 @@
             
             }
             
-            #main div card h4{
-            
-            
-                font-size:2.7em;
-            
-            }
-            
             #main div{
             
                  max-width:400px;
