@@ -48,7 +48,7 @@ var countdownfunction = setInterval(
 
     if (distance < 0) {
       clearInterval(countdownfunction);
-      document.getElementById("demo").innerHTML = "its on..blah blah!!";
+      document.getElementById("demo").innerHTML = "its on!!";
     }
 
 
